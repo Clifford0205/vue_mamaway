@@ -447,38 +447,47 @@ body {
             padding: 5px 15px;
             display: flex;
             z-index: 200;
+        }
 
-            .menu-btn {
-                background-color: unset;
-                border: none;
-                flex: 0 1 20%;
-                position: relative;
+        .menu-btn {
+            background-color: unset;
+            border: none;
+            flex: 0 1 20%;
+            position: relative;
 
-                img {
-                    width: 28px;
-                    height: 28px;
+            img {
+                width: 28px;
+                height: 28px;
+            }
+
+            .num {
+                position: absolute;
+                top: 10px;
+                right: 12px;
+                font-size: 12px;
+                width: 18px;
+                // height: 14px;
+                padding: 1px 0;
+                border-radius: 10px;
+                background-color: #000;
+                color: #fff;
+
+                @include lg {
+                    right: 35%;
                 }
 
-                .num {
-                    position: absolute;
-                    top: 10px;
-                    right: 12px;
-                    font-size: 12px;
-                    width: 18px;
-                    // height: 14px;
-                    padding: 1px 0;
-                    border-radius: 10px;
-                    background-color: #000;
-                    color: #fff;
-                }
-
-                p {
-                    color: #fff;
-                    margin-top: 5px;
-                    white-space: nowrap;
+                @include md {
+                    right: 26%;
                 }
             }
+
+            p {
+                color: #fff;
+                margin-top: 5px;
+                white-space: nowrap;
+            }
         }
+
     }
 
     //側邊選單開始
