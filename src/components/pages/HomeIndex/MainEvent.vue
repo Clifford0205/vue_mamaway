@@ -5,7 +5,6 @@
       <carousel
         :dots="false"
         :item="3"
-        :autoWidth="true"
         :loop="true"
         :responsive="{
           0: {
@@ -18,56 +17,54 @@
           }
         }"
       >
-        <template slot="prev"><span class="prev">prev</span></template>
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img src="~@/assets/img/photos/蒙版组 2@3x@2x.png" alt="" />
+              <img src="~@/assets/img/photos/蒙版组 2@3x@2x.png" alt />
             </div>
             <p>無縫孕哺內衣2件7折</p>
           </a>
         </div>
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img src="~@/assets/img/photos/蒙版组 2@3x@2x.png" alt="" />
+              <img src="~@/assets/img/photos/蒙版组 2@3x@2x.png" alt />
             </div>
             <p>無縫孕哺內衣2件7折</p>
           </a>
         </div>
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img src="~@/assets/img/photos/蒙版组 2@3x@2x.png" alt="" />
+              <img src="~@/assets/img/photos/蒙版组 2@3x@2x.png" alt />
             </div>
             <p>無縫孕哺內衣2件7折</p>
           </a>
         </div>
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img src="~@/assets/img/photos/蒙版组 2@3x@2x.png" alt="" />
+              <img src="~@/assets/img/photos/蒙版组 2@3x@2x.png" alt />
             </div>
             <p>無縫孕哺內衣2件7折</p>
           </a>
         </div>
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img src="~@/assets/img/photos/蒙版组 2@3x@2x.png" alt="" />
+              <img src="~@/assets/img/photos/蒙版组 2@3x@2x.png" alt />
             </div>
             <p>無縫孕哺內衣2件7折</p>
           </a>
         </div>
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img src="~@/assets/img/photos/蒙版组 2@3x@2x.png" alt="" />
+              <img src="~@/assets/img/photos/蒙版组 2@3x@2x.png" alt />
             </div>
             <p>無縫孕哺內衣2件7折</p>
           </a>
         </div>
-        <template slot="next"><span class="next">next</span></template>
       </carousel>
     </div>
   </div>

@@ -3,7 +3,7 @@
     <h2>熱銷商品</h2>
     <div class="carousel-area">
       <carousel
-        :dots="false"
+        :dots="true"
         :item="5"
         :autoWidth="true"
         :margin="6.5"
@@ -21,12 +21,9 @@
         }"
       >
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img
-                src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png"
-                alt=""
-              />
+              <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
               <div class="circle">
                 <object>
                   <a href="https://github.com/dashboard" class="love-area">
@@ -70,12 +67,9 @@
           </a>
         </div>
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img
-                src="~@/assets/img/photos/M106192065-900n@3x@2x.png"
-                alt=""
-              />
+              <img src="~@/assets/img/photos/M106192065-900n@3x@2x.png" alt />
               <div class="circle">
                 <object>
                   <a href="https://github.com/dashboard" class="love-area">
@@ -114,18 +108,15 @@
               <p class="new-price">NT$990</p>
             </div>
             <object>
-              <a href="" class="buy">買2送1</a>
+              <a href class="buy">買2送1</a>
             </object>
           </a>
         </div>
 
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img
-                src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png"
-                alt=""
-              />
+              <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
               <div class="circle">
                 <object>
                   <a href="https://github.com/dashboard" class="love-area">
@@ -169,12 +160,9 @@
           </a>
         </div>
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img
-                src="~@/assets/img/photos/M106192065-900n@3x@2x.png"
-                alt=""
-              />
+              <img src="~@/assets/img/photos/M106192065-900n@3x@2x.png" alt />
               <div class="circle">
                 <object>
                   <a href="https://github.com/dashboard" class="love-area">
@@ -213,18 +201,15 @@
               <p class="new-price">NT$990</p>
             </div>
             <object>
-              <a href="" class="buy">買2送1</a>
+              <a href class="buy">買2送1</a>
             </object>
           </a>
         </div>
 
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img
-                src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png"
-                alt=""
-              />
+              <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
               <div class="circle">
                 <object>
                   <a href="https://github.com/dashboard" class="love-area">
@@ -268,12 +253,9 @@
           </a>
         </div>
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img
-                src="~@/assets/img/photos/M106192065-900n@3x@2x.png"
-                alt=""
-              />
+              <img src="~@/assets/img/photos/M106192065-900n@3x@2x.png" alt />
               <div class="circle">
                 <object>
                   <a href="https://github.com/dashboard" class="love-area">
@@ -312,7 +294,7 @@
               <p class="new-price">NT$990</p>
             </div>
             <object>
-              <a href="" class="buy">買2送1</a>
+              <a href class="buy">買2送1</a>
             </object>
           </a>
         </div>

@@ -1,20 +1,29 @@
 <template>
   <div class="video-part">
-    <carousel>
-      <div class="item-video" data-merge="1">
-        <a
-          class="owl-video"
-          href="https://www.youtube.com/watch?v=H3jLkJrhHKQ"
-        ></a>
-      </div>
+    <div class="carousel-area">
+      <carousel
+        :dots="true"
+        :item="1"
+        :loop="true"
+        :responsive="{
+          0: {
+            item: 1,
+            center: true
+          },
+          996: {
+            item: 1
+          }
+        }"
+      >
+        <div class="item-video" data-merge="1">
+          <a class="owl-video" href="https://www.youtube.com/watch?v=H3jLkJrhHKQ"></a>
+        </div>
 
-      <div class="item-video" data-merge="1">
-        <a
-          class="owl-video"
-          href="https://www.youtube.com/watch?v=H3jLkJrhHKQ"
-        ></a>
-      </div>
-    </carousel>
+        <div class="item-video" data-merge="1">
+          <a class="owl-video" href="https://www.youtube.com/watch?v=H3jLkJrhHKQ"></a>
+        </div>
+      </carousel>
+    </div>
   </div>
 </template>
 

@@ -3,17 +3,11 @@
     <h2>媽媽百科</h2>
 
     <div class="carousel-area forweb">
-      <carousel
-        :dots="false"
-        :item="2"
-        :autoWidth="true"
-        :nav="true"
-        :loop="true"
-      >
+      <carousel :dots="false" :item="2" :autoWidth="true" :nav="true" :loop="true">
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img src="~@/assets/img/photos/矩形 14 拷貝 3@2x.png" alt="" />
+              <img src="~@/assets/img/photos/矩形 14 拷貝 3@2x.png" alt />
               <div class="d-flex describe">
                 <p class="title">懷孕百科</p>
                 <a class="more">看更多</a>
@@ -23,9 +17,9 @@
         </div>
 
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img src="~@/assets/img/photos/矩形 14 拷貝 3-1@2x.png" alt="" />
+              <img src="~@/assets/img/photos/矩形 14 拷貝 3-1@2x.png" alt />
               <div class="d-flex describe">
                 <p class="title">懷孕百科</p>
                 <a class="more">看更多</a>
@@ -35,9 +29,9 @@
         </div>
 
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img src="~@/assets/img/photos/矩形 14 拷貝 3@2x.png" alt="" />
+              <img src="~@/assets/img/photos/矩形 14 拷貝 3@2x.png" alt />
               <div class="d-flex describe">
                 <p class="title">懷孕百科</p>
                 <a class="more">看更多</a>
@@ -47,9 +41,9 @@
         </div>
 
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img src="~@/assets/img/photos/矩形 14 拷貝 3-1@2x.png" alt="" />
+              <img src="~@/assets/img/photos/矩形 14 拷貝 3-1@2x.png" alt />
               <div class="d-flex describe">
                 <p class="title">懷孕百科</p>
                 <a class="more">看更多</a>
@@ -62,9 +56,9 @@
 
     <div class="formobile">
       <div class="item">
-        <a href="">
+        <a href>
           <div class="img-area">
-            <img src="~@/assets/img/photos/矩形 14 拷貝 3@2x.png" alt="" />
+            <img src="~@/assets/img/photos/矩形 14 拷貝 3@2x.png" alt />
             <div class="d-flex describe">
               <p class="title">懷孕百科</p>
               <a class="more">看更多</a>
@@ -74,9 +68,9 @@
       </div>
 
       <div class="item">
-        <a href="">
+        <a href>
           <div class="img-area">
-            <img src="~@/assets/img/photos/矩形 14 拷貝 3@2x.png" alt="" />
+            <img src="~@/assets/img/photos/矩形 14 拷貝 3@2x.png" alt />
             <div class="d-flex describe">
               <p class="title">懷孕百科</p>
               <a class="more">看更多</a>
@@ -86,9 +80,9 @@
       </div>
 
       <div class="item">
-        <a href="">
+        <a href>
           <div class="img-area">
-            <img src="~@/assets/img/photos/矩形 14 拷貝 3@2x.png" alt="" />
+            <img src="~@/assets/img/photos/矩形 14 拷貝 3@2x.png" alt />
             <div class="d-flex describe">
               <p class="title">懷孕百科</p>
               <a class="more">看更多</a>
@@ -98,9 +92,9 @@
       </div>
 
       <div class="item">
-        <a href="">
+        <a href>
           <div class="img-area">
-            <img src="~@/assets/img/photos/矩形 14 拷貝 3@2x.png" alt="" />
+            <img src="~@/assets/img/photos/矩形 14 拷貝 3@2x.png" alt />
             <div class="d-flex describe">
               <p class="title">懷孕百科</p>
               <a class="more">看更多</a>
