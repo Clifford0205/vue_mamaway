@@ -2,6 +2,7 @@
 @import "./helpers/_variables";
 @import "~bootstrap/scss/bootstrap";
 @import "./helpers/_myset";
+@import "./helpers/_reset";
 
 .modal-open {
     padding: 0 !important;
@@ -1311,12 +1312,13 @@ body {
     .recommend {
         width: 100%;
         // height: 733px;
-        padding-bottom: 20px;
+        padding-bottom: 60px;
         background-color: #c22119;
         margin-top: 125px;
 
         @include lg {
             margin-top: 15px;
+            padding-bottom: 20px;
         }
 
         h2 {
@@ -1544,9 +1546,11 @@ body {
                         width: 100%;
                         display: block;
 
-                        img {
-                            width: 100%;
-                        }
+
+                    }
+
+                    img {
+                        width: 100%;
                     }
 
                     .describe {
