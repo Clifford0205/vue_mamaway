@@ -1,6 +1,7 @@
 <template>
   <div>
     <Navbar />
+    <router-view></router-view>
     <CustomerInfo />
     <Footer />
   </div>
@@ -12,7 +13,6 @@ import Footer from "./Footer";
 import CustomerInfo from "./CustomerInfo";
 
 export default {
-  name: "App",
   components: {
     Navbar,
     Footer,

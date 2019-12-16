@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 //官方的元件
 
 import Home from '@/components/Home';
+import HomeIndex from '@/components/pages/HomeIndex'
 import Page from '@/components/pages/page';
 import child from '@/components/pages/child';
 import child2 from '@/components/pages/child2';
@@ -22,6 +23,13 @@ export default new VueRouter({
             name:'首頁', //元件的呈現名稱
             path:'/', //對應的虛擬路徑
             component:Home, //對應的元件
+            children:[
+                {
+                    name:'首頁',
+                    path:'',
+                    component:HomeIndex,
+                }
+            ]
         },
         {
             // name:'分頁',
