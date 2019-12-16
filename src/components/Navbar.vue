@@ -11,7 +11,7 @@
 
       <nav class>
         <div class="nav-inside">
-          <a class="web-menu">
+          <a class="web-menu" @click.prevent="openMenu">
             <img src="~@/assets/img/icons/icn_menu_b.svg" alt />
           </a>
           <div class="theLogo mx-auto">
@@ -91,6 +91,14 @@ export default {
   },
   components: {
     carousel
+  },
+  methods: {
+    openMenu: function() {
+      $(".big-menu").css({ display: "flex" });
+      setTimeout(function() {
+        $(".big-menu").addClass("menu-show");
+      }, 500);
+    }
   }
 };
 </script>

@@ -5,6 +5,7 @@
     <CustomerInfo />
     <Footer />
     <BottomMenu />
+    <BigMenu />
   </div>
 </template>
 
@@ -13,13 +14,15 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import CustomerInfo from "./CustomerInfo";
 import BottomMenu from "./BottomMenu";
+import BigMenu from "./BigMenu";
 
 export default {
   components: {
     Navbar,
     Footer,
     CustomerInfo,
-    BottomMenu
+    BottomMenu,
+    BigMenu
   }
 };
 </script>

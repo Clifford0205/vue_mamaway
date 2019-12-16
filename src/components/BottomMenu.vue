@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="BottomMenu">
     <div class="mobile-block"></div>
     <div class="bottom-menu">
       <div class=""></div>
