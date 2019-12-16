@@ -1013,6 +1013,10 @@ body {
                 width: 90%;
                 margin: 0 auto;
 
+                @include lg {
+                    width: 100%;
+                }
+
                 .item {
                     margin: 0 5px;
 

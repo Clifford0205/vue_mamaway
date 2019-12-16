@@ -60,7 +60,8 @@ import $ from "jquery";
 export default {
   data() {
     return {};
-  }
+  },
+  created: {}
 };
 </script>
 
