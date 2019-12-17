@@ -1,5 +1,5 @@
 <template>
-  <div class="content-list">
+  <div class="content-list-nav">
     <div class="d-flex top-nav">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -91,8 +91,8 @@ export default {
           cardImage: "~@/assets/img/icons/组件 33 – 3.svg"
         },
         {
-          title: "Mastercard",
-          cardImage: "https://codeclimate.com/github/sagalbot/linktoimage.png"
+          title: "country1",
+          cardImage: "https://via.placeholder.com/20"
         }
       ]
     };

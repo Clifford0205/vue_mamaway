@@ -2539,13 +2539,18 @@ body {
             }
         }
 
-        .content-list {
+        .content-list-nav {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #D3D8DE;
 
             .top-nav {
                 justify-content: space-between;
+                align-items: center;
 
                 .breadcrumb {
                     background-color: unset;
+                    padding: 0;
+                    margin: 0;
 
 
 
@@ -2583,6 +2588,123 @@ body {
             }
 
 
+        }
+
+        .products {
+            .item {
+                // margin: 0 13px;
+                border-radius: 10px;
+                padding: 10px;
+
+                &:hover {
+                    box-shadow: 0px 3px 10px #00000033;
+                }
+
+                .img-area {
+                    max-width: 345px;
+                    // height: 478px;
+                    position: relative;
+
+                    @include lg {
+                        max-width: 255px;
+                        height: 354px;
+                    }
+
+                    img {
+                        width: 100%;
+                        // height: 100%;
+                        object-fit: cover;
+                        border-radius: 10px;
+                    }
+
+                    .circle {
+                        width: 30px;
+                        height: 30px;
+                        background-color: #f3f4f7;
+                        position: absolute;
+                        right: 16px;
+                        bottom: 20px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        object {
+                            height: 100%;
+                            width: 100%;
+
+                            .love-area {
+                                background-color: unset;
+                                border: none;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                position: relative;
+                                height: 100%;
+                                width: 100%;
+
+                                svg {
+                                    width: 15px;
+                                    height: 15px;
+                                }
+
+                                .black {
+                                    position: absolute;
+                                    max-height: 0;
+                                    overflow: hidden;
+                                    transform: translate(0, 100%);
+                                }
+
+                                .black.show {
+                                    max-height: 31px;
+                                    transform: translate(0, 0);
+                                }
+
+                                // &:hover {
+                                //     .black {
+                                //         max-height: 31px;
+                                //         transform: translate(0, 0);
+                                //     }
+                                // }
+                            }
+                        }
+                    }
+                }
+
+                .text-area {
+                    padding: 15px;
+                }
+
+                .title {
+                    margin-top: 15px;
+                    color: #525b67;
+                }
+
+                .price {
+                    margin-top: 5px;
+
+                    .o-price {
+                        text-decoration: line-through;
+                        color: #525b67;
+                        margin-right: 10px;
+                    }
+
+                    .new-price {
+                        color: #c22119;
+                    }
+                }
+
+                .buy {
+                    color: #fff;
+                    background-color: #c22119;
+                    display: block;
+                    width: 70px;
+                    height: 30px;
+                    text-align: center;
+                    line-height: 30px;
+                    margin-top: 5px;
+                }
+            }
         }
     }
 

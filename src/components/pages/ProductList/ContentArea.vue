@@ -6,7 +6,8 @@
           <Classification />
         </div>
         <div class="col-lg-8">
-          <ContentList />
+          <ContentListNav />
+          <Products />
         </div>
       </div>
     </div>
@@ -17,7 +18,8 @@
 import $ from "jquery";
 import carousel from "vue-owl-carousel";
 import Classification from "./Classification";
-import ContentList from "./ContentList";
+import ContentListNav from "./ContentListNav";
+import Products from "./Products";
 
 export default {
   data() {
@@ -26,7 +28,8 @@ export default {
   components: {
     carousel,
     Classification,
-    ContentList
+    ContentListNav,
+    Products
   }
 };
 </script>

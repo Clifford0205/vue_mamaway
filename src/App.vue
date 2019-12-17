@@ -25,7 +25,6 @@ export default {
 
 .container {
   @include lg {
-    background-color: red;
   }
 }
 </style>
