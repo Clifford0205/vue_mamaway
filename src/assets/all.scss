@@ -2321,10 +2321,27 @@ body {
         }
     }
 
+
+
     .contentarea {
         margin-top: 35px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1140px;
+        width: 100%;
+
+        @include lg {
+            max-width: 100%;
+        }
 
         .classification {
+
+            @include lg {
+                display: none;
+            }
+
             .menu-frame {
 
                 background-color: #fff;
@@ -2332,9 +2349,7 @@ body {
                 height: fit-content;
                 // padding: 20px;
 
-                @include lg {
-                    width: 80%;
-                }
+
 
 
 
@@ -2591,6 +2606,8 @@ body {
         }
 
         .products {
+            margin-top: 5px;
+
             .item {
                 // margin: 0 13px;
                 border-radius: 10px;
@@ -2601,13 +2618,13 @@ body {
                 }
 
                 .img-area {
-                    max-width: 345px;
+                    // max-width: 345px;
                     // height: 478px;
                     position: relative;
 
                     @include lg {
-                        max-width: 255px;
-                        height: 354px;
+                        // max-width: 255px;
+                        // height: 354px;
                     }
 
                     img {
@@ -2704,6 +2721,40 @@ body {
                     line-height: 30px;
                     margin-top: 5px;
                 }
+            }
+        }
+
+        .pagination {
+            margin-top: 45px;
+            display: flex;
+            justify-content: center;
+
+            .page-link:focus {
+                box-shadow: unset;
+            }
+
+            .page-link {
+                margin: 0 7.5px;
+                color: #fff;
+                background: #525B67;
+            }
+
+            .active {
+                background-color: #fff;
+                color: #000;
+            }
+
+            .go-prev,
+            .go-next {
+                border: none;
+                background-color: unset;
+                display: flex;
+                align-items: center;
+            }
+
+            .go-next-text {
+                color: #525B67;
+                margin-right: 15px;
             }
         }
     }

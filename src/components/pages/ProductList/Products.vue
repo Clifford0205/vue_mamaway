@@ -1,7 +1,7 @@
 <template>
   <div class="products">
     <div class="row">
-      <div class="col-lg-3">
+      <div class="col-lg-3   col-6">
         <div class="item">
           <a href>
             <div class="img-area">
@@ -50,7 +50,7 @@
         </div>
       </div>
 
-      <div class="col-lg-3">
+      <div class="col-lg-3 col-6">
         <div class="item">
           <a href>
             <div class="img-area">
@@ -100,7 +100,7 @@
         </div>
       </div>
 
-      <div class="col-lg-3">
+      <div class="col-lg-3 col-6">
         <div class="item">
           <a href>
             <div class="img-area">
@@ -149,7 +149,7 @@
         </div>
       </div>
 
-      <div class="col-lg-3">
+      <div class="col-lg-3 col-6">
         <div class="item">
           <a href>
             <div class="img-area">

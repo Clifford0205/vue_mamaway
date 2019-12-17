@@ -1,5 +1,5 @@
 <template>
-  <div class="classification" style="display: block;">
+  <div class="classification">
     <div class="menu-frame" @click.stop>
       <div class="all-list">
         <div class="for-mothers">

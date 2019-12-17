@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container contentarea">
+    <div class=" contentarea">
       <div class="row">
         <div class="col-lg-4">
           <Classification />
@@ -8,6 +8,7 @@
         <div class="col-lg-8">
           <ContentListNav />
           <Products />
+          <Pagination />
         </div>
       </div>
     </div>
@@ -20,6 +21,7 @@ import carousel from "vue-owl-carousel";
 import Classification from "./Classification";
 import ContentListNav from "./ContentListNav";
 import Products from "./Products";
+import Pagination from "./Pagination";
 
 export default {
   data() {
@@ -29,7 +31,8 @@ export default {
     carousel,
     Classification,
     ContentListNav,
-    Products
+    Products,
+    Pagination
   }
 };
 </script>
