@@ -2326,7 +2326,7 @@ body {
 
         .classification {
             .menu-frame {
-                width: 400px;
+
                 background-color: #fff;
                 min-height: 100vh;
                 height: fit-content;
@@ -2537,6 +2537,52 @@ body {
                     }
                 }
             }
+        }
+
+        .content-list {
+
+            .top-nav {
+                justify-content: space-between;
+
+                .breadcrumb {
+                    background-color: unset;
+
+
+
+                    .breadcrumb-item+.breadcrumb-item::before {
+                        display: inline-block;
+                        padding-right: .5rem;
+                        color: #6c757d;
+                        content: ">";
+                    }
+
+                    a {
+                        font-size: 14px;
+                        color: #525C68;
+                    }
+                }
+
+                .ar-nav {
+                    .arrange {
+                        margin-left: 20px;
+
+                        .four,
+                        .three {
+                            fill: #a7acb2;
+                        }
+                    }
+
+                    .active .four {
+                        fill: #525B67;
+                    }
+
+                    .active .three {
+                        fill: #525B67;
+                    }
+                }
+            }
+
+
         }
     }
 

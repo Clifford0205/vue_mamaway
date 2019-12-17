@@ -5,9 +5,11 @@ import App from './App'
 import axios from 'axios' //主要ＡＪＡＸ套件
 import VueAxios from 'vue-axios'//將它轉為ＶＵＥ的套件
 import router from './router';
+import vSelectMenu from 'v-selectmenu';
 import 'bootstrap';
 
 Vue.use(VueAxios, axios)
+Vue.use(vSelectMenu, { global });
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

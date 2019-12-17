@@ -2,10 +2,12 @@
   <div>
     <div class="container contentarea">
       <div class="row">
-        <div class="col-lg-2">
+        <div class="col-lg-4">
           <Classification />
         </div>
-        <div class="col-lg-10"></div>
+        <div class="col-lg-8">
+          <ContentList />
+        </div>
       </div>
     </div>
   </div>
@@ -15,6 +17,7 @@
 import $ from "jquery";
 import carousel from "vue-owl-carousel";
 import Classification from "./Classification";
+import ContentList from "./ContentList";
 
 export default {
   data() {
@@ -22,7 +25,8 @@ export default {
   },
   components: {
     carousel,
-    Classification
+    Classification,
+    ContentList
   }
 };
 </script>
