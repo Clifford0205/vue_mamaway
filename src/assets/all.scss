@@ -2227,6 +2227,7 @@ body {
             .owl-carousel {
                 width: 100%;
                 margin: 0 auto;
+                position: relative;
 
                 @include lg {
                     width: 100%;
@@ -2261,63 +2262,94 @@ body {
                         color: #525b67;
                     }
                 }
-            }
 
-            .owl-prev,
-            .owl-next {
-                position: absolute;
-                height: 80px;
-                width: 60px;
-                background-color: unset;
-                border-radius: unset;
-                font-size: 0;
+                .owl-nav {
+                    &:hover {
+                        background-color: unset;
+                    }
+                }
 
-                &:hover {
+                .owl-prev,
+                .owl-next {
+                    position: absolute;
+                    height: 80px;
+                    width: 60px;
                     background-color: unset;
+                    border-radius: unset;
+                    font-size: 0;
+
+                    &:hover {
+                        background-color: unset;
+                    }
+
                 }
+
+                .owl-prev {
+                    left: 0%;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    background-image: url('~@/assets/img/icons/icn_arrow_l_b.svg');
+                    background-size: 115px 55px;
+                    background-repeat: no-repeat;
+                    background-position: 45%;
+                    display: inline-block;
+
+
+                    // &:hover {
+                    //     background-color: unset;
+                    // }
+
+                    img {
+                        width: 48px;
+                        height: 48px;
+                    }
+                }
+
+                .owl-next {
+                    right: 0%;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    background-image: url('~@/assets/img/icons/icn_arrow_r_b.svg');
+                    background-size: 115px 55px;
+                    background-repeat: no-repeat;
+                    background-position: 45%;
+                    display: inline-block;
+
+                    // &:hover {
+                    //     background-color: unset;
+                    // }
+
+                    img {
+                        width: 48px;
+                        height: 48px;
+                    }
+                }
+
 
             }
 
-            .owl-prev {
-                left: -4%;
-                top: 50%;
-                transform: translate(0, -50%);
-                background-image: url('~@/assets/img/icons/icn_arrow_l_b.svg');
-                background-size: 115px 55px;
-                background-repeat: no-repeat;
-                background-position: 45%;
-                display: inline-block;
+            .owl-dots {
+                position: absolute;
+                margin-top: 0;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 0);
 
+                .owl-dot {
+                    span {
+                        width: 15px;
+                        height: 3px;
+                    }
 
-                // &:hover {
-                //     background-color: unset;
-                // }
+                }
 
-                img {
-                    width: 48px;
-                    height: 48px;
+                .active {
+                    span {
+                        background-color: #FD4337;
+                    }
                 }
             }
 
-            .owl-next {
-                right: -4%;
-                top: 50%;
-                transform: translate(0, -50%);
-                background-image: url('~@/assets/img/icons/icn_arrow_r_b.svg');
-                background-size: 115px 55px;
-                background-repeat: no-repeat;
-                background-position: 45%;
-                display: inline-block;
-
-                // &:hover {
-                //     background-color: unset;
-                // }
-
-                img {
-                    width: 48px;
-                    height: 48px;
-                }
-            }
         }
     }
 

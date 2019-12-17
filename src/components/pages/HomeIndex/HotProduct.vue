@@ -4,8 +4,7 @@
     <div class="carousel-area">
       <carousel
         :dots="true"
-        :item="5"
-        :autoWidth="true"
+        :items="5"
         :margin="6.5"
         :loop="true"
         :responsive="{

@@ -1,38 +1,24 @@
 <template>
   <div class="product-kv">
     <div class="carousel-area">
-      <carousel :dots="false" :item="1">
-        <div class="item">
-          <a href>
-            <div class="img-area">
-              <img src="~@/assets/img/photos/矩形 13@2x.png" alt />
-            </div>
-          </a>
-        </div>
-
-        <div class="item">
-          <a href>
-            <div class="img-area">
-              <img src="~@/assets/img/photos/矩形 13@2x.png" alt />
-            </div>
-          </a>
-        </div>
-
-        <div class="item">
-          <a href>
-            <div class="img-area">
-              <img src="~@/assets/img/photos/矩形 13@2x.png" alt />
-            </div>
-          </a>
-        </div>
-
-        <div class="item">
-          <a href>
-            <div class="img-area">
-              <img src="~@/assets/img/photos/矩形 13@2x.png" alt />
-            </div>
-          </a>
-        </div>
+      <carousel
+        :dots="true"
+        :items="1"
+        :loop="true"
+        :responsive="{
+          0: {
+            dots: true,
+            nav: false
+          },
+          996: {
+            dots: false,
+            nav: true
+          }
+        }"
+      >
+        <img src="~@/assets/img/photos/矩形 13@2x.png" />
+        <img src="~@/assets/img/photos/矩形 13@2x.png" />
+        <img src="~@/assets/img/photos/矩形 13@2x.png" />
       </carousel>
     </div>
   </div>
