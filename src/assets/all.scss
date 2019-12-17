@@ -2217,6 +2217,34 @@ body {
 
     //產品列表頁開始
 
+    .breadcrumb {
+        display: none;
+        font-size: 10px;
+        padding: 10px;
+        background-color: unset;
+        margin: 0;
+
+        .breadcrumb-item+.breadcrumb-item::before {
+            display: inline-block;
+            padding-right: .5rem;
+            color: #6c757d;
+            content: ">";
+        }
+
+
+        li {
+            a {
+                color: #525B67;
+
+            }
+        }
+
+        @include lg {
+            display: flex;
+
+        }
+    }
+
     .product-kv {
         .carousel-area {
 
@@ -2366,6 +2394,7 @@ body {
 
         @include lg {
             max-width: 100%;
+            margin-top: 0;
         }
 
         .classification {
@@ -2590,15 +2619,28 @@ body {
             padding-bottom: 10px;
             border-bottom: 1px solid #D3D8DE;
 
+            @include lg {
+                padding-bottom: 0px;
+            }
+
             .top-nav {
                 justify-content: space-between;
                 align-items: center;
+                display: flex;
+
+                @include lg {
+                    display: none;
+                }
 
                 .breadcrumb {
                     background-color: unset;
+                    display: flex;
                     padding: 0;
                     margin: 0;
 
+                    @include lg {
+                        display: none;
+                    }
 
 
                     .breadcrumb-item+.breadcrumb-item::before {
@@ -2630,6 +2672,37 @@ body {
 
                     .active .three {
                         fill: #525B67;
+                    }
+                }
+            }
+
+            .mobile-nav {
+                display: none;
+
+                @include lg {
+                    display: flex;
+                }
+
+                .the-array,
+                .btns {
+                    flex-grow: 1;
+                }
+
+                .btns {
+                    height: 45px;
+
+                    button {
+                        flex-grow: 1;
+                    }
+                }
+
+                .the-array {
+                    .arrange {
+
+                        .two,
+                        .one {
+                            fill: #a7acb2;
+                        }
                     }
                 }
             }
