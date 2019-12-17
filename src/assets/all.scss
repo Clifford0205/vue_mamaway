@@ -2219,22 +2219,25 @@ body {
 
     .product-kv {
         .carousel-area {
-            margin-top: 30px;
 
             @include lg {
                 margin-top: 15px;
             }
 
             .owl-carousel {
-                width: 90%;
+                width: 100%;
                 margin: 0 auto;
 
                 @include lg {
                     width: 100%;
                 }
 
+                // .owl-item {
+                //     width: 100% !important;
+                // }
+
                 .item {
-                    margin: 0 5px;
+                    margin: 0;
 
                     .img-area {
                         // width: 589px;
@@ -2317,6 +2320,227 @@ body {
             }
         }
     }
+
+    .contentarea {
+        margin-top: 35px;
+
+        .classification {
+            .menu-frame {
+                width: 400px;
+                background-color: #fff;
+                min-height: 100vh;
+                height: fit-content;
+                // padding: 20px;
+
+                @include lg {
+                    width: 80%;
+                }
+
+
+
+                .all-list {
+                    // margin-top: 20px;
+
+
+                    .for-mothers {
+                        padding-left: 15px;
+
+                        .cl-title {
+                            font-size: 20px;
+                            padding-bottom: 20px;
+                            border-bottom: 1px solid #D3D8DE;
+
+
+                        }
+
+                        .except-one {
+                            margin-top: 31px;
+                        }
+
+                        .list-title {
+                            font-size: 18px;
+                            color: #fd4337;
+                            margin-top: 20px;
+                            padding-left: 10px;
+                        }
+
+                        .mother-list {
+                            font-size: 16px;
+                            padding-left: 10px;
+                            margin-top: 15px;
+
+                            .active {
+                                font-size: 18px;
+                                font-weight: 400;
+                            }
+
+                            li {
+                                margin-top: 10px;
+
+                                a {
+                                    font-weight: 200;
+                                }
+                            }
+
+                            .little-list {
+
+                                font-size: 16px;
+
+                                @include lg {
+                                    display: none;
+                                }
+                            }
+
+                            .sales {
+                                a {
+                                    display: block;
+                                }
+
+                                .sales-img {
+                                    margin-top: 26px;
+                                    width: 248px;
+                                    height: 65px;
+
+                                    img {
+                                        width: 100%;
+                                        object-fit: cover;
+                                    }
+                                }
+                            }
+                        }
+
+                        .expand-menu {
+                            margin-top: 25px;
+
+                            .expand-menu-title {
+                                cursor: pointer;
+                                display: block;
+                                font-size: 18px;
+                                background-color: #f3f4f7;
+                                margin-left: -35px;
+                                margin-right: -20px;
+                                padding: 17px 35px;
+                                margin-bottom: 6px;
+                                position: relative;
+
+                                @include lg {
+                                    font-size: 16px;
+                                }
+
+                                .fas {
+                                    position: absolute;
+                                    right: 35px;
+                                }
+                            }
+
+                            .expand-item.open-menu {
+                                .fas {
+                                    transform: rotate(90deg);
+                                }
+                            }
+
+                            .for-mobile {
+                                display: none;
+
+                                @include lg {
+                                    display: block;
+                                }
+                            }
+
+                            .little-item {
+                                margin-top: 10px;
+                                font-size: 12px;
+                                max-height: 0;
+                                overflow: hidden;
+
+                                li {
+                                    margin-bottom: 15px;
+
+                                    img {
+                                        width: 38px;
+                                        height: 38px;
+                                    }
+                                }
+
+                                li:last-child {
+                                    margin-bottom: 26px;
+                                }
+                            }
+
+                            .follow {
+                                display: flex;
+                                flex-wrap: wrap;
+                                margin-top: 20px;
+
+                                li {
+                                    flex: 0 0 25%;
+                                    margin-bottom: 20px;
+                                }
+                            }
+
+                            .expand-item.open-menu {
+                                .little-item {
+                                    max-height: 600px;
+                                }
+                            }
+                        }
+
+                        .key-words {
+                            margin-top: 20px;
+
+                            .one-line {
+                                margin-bottom: 13px;
+                            }
+
+                            .red-box {
+                                font-size: 14px;
+                                color: #B72622;
+                                padding: 5px 15px;
+                                border: 1px solid #B72622;
+                                border-radius: 5px;
+                                margin-right: 11px;
+                            }
+                        }
+
+                        .event-list-img {
+                            margin-top: 20px;
+
+                            li {
+                                width: 100%;
+
+                                a {
+                                    width: 100%;
+
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+
+                            .img-area {
+                                margin-bottom: 10px;
+                            }
+                        }
+
+                        .event-list-text {
+                            margin-top: 20px;
+
+                            li {
+                                margin-bottom: 16px;
+
+                                a {
+                                    font-size: 14px;
+                                    color: #525B67;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
 
     //產品列表頁結束
 }

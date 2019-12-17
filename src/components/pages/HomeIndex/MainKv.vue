@@ -1,8 +1,5 @@
 <template>
   <div class>
-    <!-- fixed留白區域 -->
-    <div class="makeup-block"></div>
-    <!-- fixed留白區域 -->
     <div id="carouselExampleIndicators" class="carousel slide main-KV" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
