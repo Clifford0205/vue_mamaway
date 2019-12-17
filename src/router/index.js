@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 
 import Home from '@/components/Home';
 import HomeIndex from '@/components/pages/HomeIndex'
+import ProductList from '@/components/pages/ProductList'
 import Page from '@/components/pages/page';
 import child from '@/components/pages/child';
 import child2 from '@/components/pages/child2';
@@ -28,6 +29,11 @@ export default new VueRouter({
                     name:'首頁',
                     path:'',
                     component:HomeIndex,
+                },
+                {
+                    name:'商品列表',
+                    path:'product_list',
+                    component:ProductList,
                 }
             ]
         },

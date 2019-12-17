@@ -6,6 +6,7 @@
     <Footer />
     <BottomMenu />
     <BigMenu />
+    <GoTop />
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import Footer from "./Footer";
 import CustomerInfo from "./CustomerInfo";
 import BottomMenu from "./BottomMenu";
 import BigMenu from "./BigMenu";
+import GoTop from "./GoTop";
 
 export default {
   components: {
@@ -22,7 +24,8 @@ export default {
     Footer,
     CustomerInfo,
     BottomMenu,
-    BigMenu
+    BigMenu,
+    GoTop
   }
 };
 </script>
