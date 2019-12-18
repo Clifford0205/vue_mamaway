@@ -91,7 +91,9 @@ import carousel from "vue-owl-carousel";
 
 export default {
   data() {
-    return {};
+    return {
+      route: this.$route.path
+    };
   },
   components: {
     carousel
@@ -109,8 +111,28 @@ export default {
     }
   },
 
+  watch: {
+    route: function() {
+      alert("vvv");
+    }
+    // $route(to, from) {
+    //   alert("vvv");
+    // }
+  },
+
+  updated() {
+    console.log(this.$route.path);
+    if (this.$route.path !== "/") {
+      $(".makeup-block").addClass("no-sort");
+    }
+  },
+
   mounted() {
-    console.log($(".sort-menu").length);
+    // alert($(".sort-menu").length);
+    console.log(this.$route.path);
+    if (this.$route.path !== "/") {
+      $(".makeup-block").addClass("no-sort");
+    }
 
     if ($(".sort-menu").length == 0) {
       $(".makeup-block").addClass("no-sort");
