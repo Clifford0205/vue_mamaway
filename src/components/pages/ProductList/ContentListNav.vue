@@ -47,7 +47,7 @@
           <img src="~@/assets/img/icons/icn_arrow_d_g2.svg" alt />
           <span>分類</span>
         </button>
-        <button>
+        <button @click="openFilter">
           <img src="~@/assets/img/icons/组件 33 – 3.svg" alt />
           <span>篩選</span>
         </button>
@@ -96,6 +96,11 @@ export default {
   components: {
     carousel,
     vSelect
+  },
+  methods: {
+    openFilter: function() {
+      $(".filter-page").css({ display: "block" });
+    }
   }
 };
 </script>

@@ -6,6 +6,7 @@
     <Footer />
     <BottomMenu />
     <BigMenu />
+    <FilterPage />
     <GoTop />
   </div>
 </template>
@@ -16,6 +17,7 @@ import Footer from "./Footer";
 import CustomerInfo from "./CustomerInfo";
 import BottomMenu from "./BottomMenu";
 import BigMenu from "./BigMenu";
+import FilterPage from "./FilterPage";
 import GoTop from "./GoTop";
 
 export default {
@@ -25,7 +27,8 @@ export default {
     CustomerInfo,
     BottomMenu,
     BigMenu,
-    GoTop
+    GoTop,
+    FilterPage
   }
 };
 </script>
