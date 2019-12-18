@@ -1,8 +1,7 @@
 <template>
   <div>
     <Navbar />
-    <!-- <router-view></router-view> -->
-    <p>123345</p>
+    <router-view></router-view>
     <CustomerInfo />
     <Footer />
     <BottomMenu class="btn-menu" />

@@ -5,6 +5,7 @@ import VueRouter from 'vue-router'
 import Home from '@/components/Home';
 import SortMenu from '@/components/SortMenu';
 import ProductDetails from '@/components/ProductDetails'
+import DetailsPage from '@/components/pages/DetailsPage'
 import HomeIndex from '@/components/pages/HomeIndex'
 import ProductList from '@/components/pages/ProductList'
 import Page from '@/components/pages/page';
@@ -23,7 +24,7 @@ export default new VueRouter({
     linkActiveClass:'active',
     routes:[
         {
-            name:'首頁', //元件的呈現名稱
+            //name:'首頁', //元件的呈現名稱
             path:'/', //對應的虛擬路徑
             component:Home, //對應的元件
             children:[
@@ -43,9 +44,16 @@ export default new VueRouter({
             ]
         },
         {
-            name:'商品詳細頁',
+            //name:'商品詳細頁',
             path:'/product_details', //對應的虛擬路徑
             component:ProductDetails, //對應的元件
+            children:[
+                {
+                    name:'商品詳細頁',
+                    path:'',
+                    component:DetailsPage,
+                }
+            ]
         }
         ,{
             // name:'分頁',
