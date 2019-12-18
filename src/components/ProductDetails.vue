@@ -1,10 +1,11 @@
 <template>
   <div>
     <Navbar />
-    <router-view></router-view>
+    <!-- <router-view></router-view> -->
+    <p>123345</p>
     <CustomerInfo />
     <Footer />
-    <BottomMenu />
+    <BottomMenu class="btn-menu" />
     <BigMenu />
     <FilterPage />
     <GoTop />
@@ -33,6 +34,12 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "@/assets/all.scss";
+
+.btn-menu {
+  @include lg {
+    display: none;
+  }
+}
 </style>

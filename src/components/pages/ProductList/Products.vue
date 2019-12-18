@@ -1,9 +1,9 @@
 <template>
   <div class="products">
     <div class="row">
-      <div class="col-lg-3   col-6">
+      <div class="col-lg-3 col-6">
         <div class="item">
-          <a href>
+          <router-link to="/product_details">
             <div class="img-area">
               <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
               <div class="circle">
@@ -46,7 +46,7 @@
             <object>
               <a class="buy">買2送1</a>
             </object>
-          </a>
+          </router-link>
         </div>
       </div>
 

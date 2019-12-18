@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class=" contentarea">
+    <div class="contentarea">
       <div class="row">
         <div class="col-lg-4">
           <Classification />

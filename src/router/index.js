@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 //官方的元件
 
 import Home from '@/components/Home';
+import ProductDetails from '@/components/ProductDetails'
 import HomeIndex from '@/components/pages/HomeIndex'
 import ProductList from '@/components/pages/ProductList'
 import Page from '@/components/pages/page';
@@ -38,6 +39,11 @@ export default new VueRouter({
             ]
         },
         {
+            name:'商品詳細頁',
+            path:'/product_details', //對應的虛擬路徑
+            component:ProductDetails, //對應的元件
+        }
+        ,{
             // name:'分頁',
             path:'/page',
             // component:Page,
