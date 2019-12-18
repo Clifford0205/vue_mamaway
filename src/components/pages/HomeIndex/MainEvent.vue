@@ -4,13 +4,14 @@
     <div class="carousel-area">
       <carousel
         :dots="false"
-        :item="3"
+        :items="3"
         :loop="true"
         :responsive="{
           0: {
-            item: 1,
+            items: 1,
             nav: false,
-            center: true
+            center: true,
+            autoWidth:true,
           },
           996: {
             item: 3

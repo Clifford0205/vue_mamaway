@@ -3,7 +3,8 @@
     <div class="carousel-area">
       <carousel
         :dots="true"
-        :item="1"
+        :items="1"
+        :nav="false"
         :loop="true"
         :responsive="{
           0: {

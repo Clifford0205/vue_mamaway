@@ -3,19 +3,20 @@
     <h2>熱銷商品</h2>
     <div class="carousel-area">
       <carousel
-        :dots="true"
+        :dots="false"
         :items="5"
         :margin="6.5"
         :loop="true"
         :responsive="{
           0: {
-            item: 4,
+            items: 1,
+            autoWidth:true,
             nav: false,
             center: true,
             margin: 20
           },
           996: {
-            item: 3
+            items: 5
           }
         }"
       >

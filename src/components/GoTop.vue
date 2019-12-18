@@ -2,11 +2,11 @@
   <div class>
     <a class="goTop" @click.prevent="goTop">
       <div class="pos">
-        <div class="triangle"></div>
-        <p class="arrow">
+        <!-- <div class="triangle"></div> -->
+        <p class="arrow text-center">
           <img src="~@/assets/img/icons/组件 55 – 3.svg" alt />
         </p>
-        <p>Top</p>
+        <!-- <p>Top</p> -->
       </div>
     </a>
   </div>

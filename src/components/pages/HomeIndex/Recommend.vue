@@ -5,12 +5,13 @@
     <div class="carousel-area">
       <carousel
         :dots="false"
-        :item="4"
-        :autoWidth="true"
+        :items="4"
         :loop="true"
+        :margin="27"
         :responsive="{
           0: {
-            item: 1,
+            items: 1,
+            autoWidth:true,
             nav: false,
             center: true
           },
@@ -20,72 +21,72 @@
         }"
       >
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img src="~@/assets/img/photos/蒙版组 3@3x-1@2x.png" alt="" />
+              <img src="~@/assets/img/photos/蒙版组 3@3x-1@2x.png" alt />
             </div>
           </a>
         </div>
 
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img src="~@/assets/img/photos/蒙版组 3@3x@2x.png" alt="" />
+              <img src="~@/assets/img/photos/蒙版组 3@3x@2x.png" alt />
             </div>
           </a>
         </div>
 
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img src="~@/assets/img/photos/蒙版组 3@3x-1@2x.png" alt="" />
+              <img src="~@/assets/img/photos/蒙版组 3@3x-1@2x.png" alt />
             </div>
           </a>
         </div>
 
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img src="~@/assets/img/photos/蒙版组 3@3x@2x.png" alt="" />
+              <img src="~@/assets/img/photos/蒙版组 3@3x@2x.png" alt />
             </div>
           </a>
         </div>
 
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img src="~@/assets/img/photos/蒙版组 3@3x-1@2x.png" alt="" />
+              <img src="~@/assets/img/photos/蒙版组 3@3x-1@2x.png" alt />
             </div>
           </a>
         </div>
 
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img src="~@/assets/img/photos/蒙版组 3@3x@2x.png" alt="" />
+              <img src="~@/assets/img/photos/蒙版组 3@3x@2x.png" alt />
             </div>
           </a>
         </div>
 
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img src="~@/assets/img/photos/蒙版组 3@3x-1@2x.png" alt="" />
+              <img src="~@/assets/img/photos/蒙版组 3@3x-1@2x.png" alt />
             </div>
           </a>
         </div>
 
         <div class="item">
-          <a href="">
+          <a href>
             <div class="img-area">
-              <img src="~@/assets/img/photos/蒙版组 3@3x@2x.png" alt="" />
+              <img src="~@/assets/img/photos/蒙版组 3@3x@2x.png" alt />
             </div>
           </a>
         </div>
       </carousel>
     </div>
 
-    <a href="" class="more">更多穿搭</a>
+    <a href class="more">更多穿搭</a>
   </div>
 </template>
 
