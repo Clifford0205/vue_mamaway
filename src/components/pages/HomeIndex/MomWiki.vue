@@ -3,7 +3,7 @@
     <h2>媽媽百科</h2>
 
     <div class="carousel-area forweb">
-      <carousel :dots="false" :item="2" :autoWidth="true" :nav="true" :loop="true">
+      <carousel :dots="false" :items="2" :nav="true" :loop="true">
         <div class="item">
           <a href>
             <div class="img-area">

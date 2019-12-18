@@ -8,13 +8,14 @@
         :loop="true"
         :responsive="{
           0: {
-            item: 1,
+            items: 1,
             center: true
           },
           996: {
-            item: 1
+            items: 1
           }
         }"
+        class="video-carousel"
       >
         <div class="item-video" data-merge="1">
           <a class="owl-video" href="https://www.youtube.com/watch?v=H3jLkJrhHKQ"></a>
