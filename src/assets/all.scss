@@ -2305,7 +2305,7 @@ body {
         .carousel-area {
 
             @include lg {
-                margin-top: 15px;
+                margin-top: 0px;
             }
 
             .owl-carousel {
@@ -2677,6 +2677,7 @@ body {
 
             @include lg {
                 padding-bottom: 0px;
+                border: none;
             }
 
             .top-nav {
@@ -2716,6 +2717,7 @@ body {
                     .arrange {
                         margin-left: 20px;
 
+
                         .four,
                         .three {
                             fill: #a7acb2;
@@ -2734,26 +2736,42 @@ body {
 
             .mobile-nav {
                 display: none;
+                margin-right: -15px;
+                margin-left: -15px;
+                background-color: #F3F4F7;
 
                 @include lg {
                     display: flex;
                 }
 
-                .the-array,
-                .btns {
-                    flex-grow: 1;
-                }
+
 
                 .btns {
                     height: 45px;
+                    width: 80%;
 
                     button {
                         flex-grow: 1;
+                        border: none;
+                        background-color: unset;
+                        color: #525B67;
+                        border-right: 1px solid #A7ACB2;
+                        margin: 10px 0;
+                    }
+
+                    button:last-child {
+                        border: none;
                     }
                 }
 
                 .the-array {
+                    align-items: center;
+                    width: 20%;
+
                     .arrange {
+                        flex-grow: 1;
+                        display: flex;
+                        justify-content: center;
 
                         .two,
                         .one {
