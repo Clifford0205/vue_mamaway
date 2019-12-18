@@ -433,9 +433,21 @@ body {
         }
     }
 
+    .makeup-block.no-sort {
+        height: 95px;
+
+        @include lg {
+            height: 104px;
+        }
+    }
+
     .makeup-block.short {
 
         height: 120.5px;
+    }
+
+    .makeup-block.no-sort.short {
+        height: 50px;
     }
 
 

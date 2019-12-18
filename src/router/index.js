@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 //官方的元件
 
 import Home from '@/components/Home';
+import SortMenu from '@/components/SortMenu';
 import ProductDetails from '@/components/ProductDetails'
 import HomeIndex from '@/components/pages/HomeIndex'
 import ProductList from '@/components/pages/ProductList'
@@ -29,7 +30,10 @@ export default new VueRouter({
                 {
                     name:'首頁',
                     path:'',
-                    component:HomeIndex,
+                    components:{
+                        default:HomeIndex,
+                        sortmenu:SortMenu,
+                    },
                 },
                 {
                     name:'商品列表',

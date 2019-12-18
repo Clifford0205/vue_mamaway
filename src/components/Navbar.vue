@@ -3,7 +3,7 @@
     <div class="top-float">
       <div class="top-area">
         <section class="download-area">
-          <a class="close-d">
+          <a class="close-d" @click="closeDArea">
             <img src="~@/assets/img/icons/icn_close-1.svg" alt />
           </a>
           <p>寶寶大餵營APP</p>
@@ -63,7 +63,7 @@
         </div>
       </div>
 
-      <div class="sort-menu">
+      <!-- <div class="sort-menu">
         <carousel :items="4" :dots="false" :nav="false">
           <a class="text-center classify activity">孕哺時尚</a>
           <a class="text-center classify">迪士尼</a>
@@ -74,7 +74,9 @@
           <a class="text-center classify">機能用品</a>
           <a class="text-center classify">寶寶衣著</a>
         </carousel>
-      </div>
+      </div>-->
+
+      <router-view name="sortmenu"></router-view>
     </div>
 
     <!-- fixed留白區域 -->
@@ -100,6 +102,18 @@ export default {
       setTimeout(function() {
         $(".big-menu").addClass("menu-show");
       }, 500);
+    },
+    closeDArea: function() {
+      $(".download-area").css({ display: "none" });
+      $(".makeup-block").addClass("short");
+    }
+  },
+
+  mounted() {
+    console.log($(".sort-menu").length);
+
+    if ($(".sort-menu").length == 0) {
+      $(".makeup-block").addClass("no-sort");
     }
   }
 };
