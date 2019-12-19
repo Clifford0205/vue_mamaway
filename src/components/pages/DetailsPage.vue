@@ -3,6 +3,9 @@
     <div>
       <Breadcrumb />
       <AddInCart />
+      <ProductContent />
+      <SeeSharing />
+      <Recommend />
       <!-- <ProductKv /> -->
       <!-- <ContentArea /> -->
     </div>
@@ -12,6 +15,9 @@
 <script>
 import Breadcrumb from "@/components/Breadcrumb";
 import AddInCart from "./ProductDetails/AddInCart";
+import ProductContent from "./ProductDetails/ProductContent";
+import SeeSharing from "./ProductDetails/SeeSharing";
+import Recommend from "./ProductDetails/Recommend";
 import ProductKv from "./ProductList/ProductKv";
 import ContentArea from "./ProductList/ContentArea";
 
@@ -20,7 +26,10 @@ export default {
     ProductKv,
     ContentArea,
     Breadcrumb,
-    AddInCart
+    AddInCart,
+    ProductContent,
+    SeeSharing,
+    Recommend
   }
 };
 </script>
@@ -29,6 +38,12 @@ export default {
 body {
   .breadcrumb {
     display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 </style>
+
+
+
+
