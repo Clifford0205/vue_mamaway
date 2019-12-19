@@ -29,6 +29,10 @@
     <div class="Intro-img">
       <img src="~@/assets/img/photos/B101192720-1000@2x.png" alt />
     </div>
+
+    <div class="size-table">
+      <img src="~@/assets/img/photos/尺寸表.svg" alt />
+    </div>
   </div>
 </template>
 

@@ -3304,35 +3304,42 @@ body {
                     width: 100%;
                 }
             }
+
+            .size-table {
+                img {
+                    width: 100%;
+                }
+
+                margin-bottom: 40px;
+            }
         }
 
         .see-sharing {
             width: 100%;
-            height: 500px;
             background-color: #F3F4F7;
             display: block;
-            margin-left: 0;
-            margin-right: 0;
+            margin-bottom: 60px;
+            padding-bottom: 100px;
 
             .area-900 {
-                width: 900px;
+                max-width: 900px;
                 margin: 0 auto;
 
                 h2 {
                     font-size: 38px;
+                    padding-top: 60px;
 
                 }
 
                 .carousel-area {
                     margin-top: 30px;
-                    height: 100%;
 
                     @include lg {
                         margin-top: 15px;
                     }
 
                     .owl-carousel {
-                        width: 90%;
+                        width: 100%;
                         margin: 0 auto;
 
                         @include lg {
@@ -3340,7 +3347,7 @@ body {
                         }
 
                         .item {
-                            margin: 0 5px;
+                            margin: 0 px;
 
                             .img-area {
                                 // width: 589px;
@@ -3381,7 +3388,7 @@ body {
                         }
 
                         .owl-prev {
-                            left: -4%;
+                            left: -10%;
                             top: 50%;
                             transform: translate(0, -50%);
                             background-image: url('~@/assets/img/icons/icn_arrow_l_b.svg');
@@ -3402,7 +3409,7 @@ body {
                         }
 
                         .owl-next {
-                            right: -4%;
+                            right: -10%;
                             top: 50%;
                             transform: translate(0, -50%);
                             background-image: url('~@/assets/img/icons/icn_arrow_r_b.svg');
@@ -3423,7 +3430,7 @@ body {
 
                         .owl-dots {
                             position: absolute;
-                            bottom: -20px;
+                            bottom: -40px;
                             left: 50%;
                             transform: translate(-50%, 0);
 
@@ -3450,6 +3457,7 @@ body {
 
 
                 }
+
             }
         }
 
@@ -3461,6 +3469,7 @@ body {
             h2 {
                 font-size: 38px;
                 text-align: left;
+                padding-top: 0;
             }
 
             .the-line {
