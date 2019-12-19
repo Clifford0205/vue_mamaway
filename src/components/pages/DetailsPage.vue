@@ -1,7 +1,7 @@
 <template>
   <div class="details-page container">
     <div>
-      <Breadcrumb />
+      <Breadcrumb class="breadcrumb" />
       <AddInCart />
       <ProductContent />
       <SeeSharing />
@@ -35,11 +35,16 @@ export default {
 </script>
 
 <style  lang="scss">
+@import "@/assets/helpers/_myset.scss";
 body {
   .breadcrumb {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
+
+    @include lg {
+      display: none;
+    }
   }
 }
 </style>

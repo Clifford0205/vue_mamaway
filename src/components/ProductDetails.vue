@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar />
+    <Navbar class="top-nav" />
     <router-view></router-view>
     <CustomerInfo />
     <Footer />
@@ -35,8 +35,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/all.scss";
-
-.top-float {
+.top-nav {
   @include lg {
     display: none;
   }
