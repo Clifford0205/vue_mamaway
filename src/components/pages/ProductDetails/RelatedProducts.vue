@@ -1,6 +1,6 @@
 <template>
   <div class="recommend">
-    <h2>穿搭推薦</h2>
+    <h2>相關商品</h2>
     <div class="the-line"></div>
     <div class="carousel-area">
       <carousel

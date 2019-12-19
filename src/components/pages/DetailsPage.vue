@@ -6,8 +6,8 @@
       <ProductContent />
       <SeeSharing />
       <Recommend />
-      <!-- <ProductKv /> -->
-      <!-- <ContentArea /> -->
+      <RelatedProducts />
+      <BrowsingHistory />
     </div>
   </div>
 </template>
@@ -18,18 +18,18 @@ import AddInCart from "./ProductDetails/AddInCart";
 import ProductContent from "./ProductDetails/ProductContent";
 import SeeSharing from "./ProductDetails/SeeSharing";
 import Recommend from "./ProductDetails/Recommend";
-import ProductKv from "./ProductList/ProductKv";
-import ContentArea from "./ProductList/ContentArea";
+import RelatedProducts from "./ProductDetails/RelatedProducts";
+import BrowsingHistory from "./ProductDetails/BrowsingHistory";
 
 export default {
   components: {
-    ProductKv,
-    ContentArea,
     Breadcrumb,
     AddInCart,
     ProductContent,
     SeeSharing,
-    Recommend
+    Recommend,
+    RelatedProducts,
+    BrowsingHistory
   }
 };
 </script>
