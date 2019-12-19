@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row add-in-cart">
     <div class="col-lg-6 product-photo">
       <ul class="album">
         <li>
@@ -37,6 +37,28 @@
           <img src="~@/assets/img/icons/icn_arrow_r_b.svg" alt />
         </button>
       </div>
+    </div>
+
+    <div class="col-lg-6 mobile-slider">
+      <carousel
+        :dots="true"
+        :items="1"
+        :loop="true"
+        :responsive="{
+          0: {
+            dots: true,
+            nav: false
+          },
+          996: {
+            dots: false,
+            nav: true
+          }
+        }"
+      >
+        <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" />
+        <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" />
+        <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" />
+      </carousel>
     </div>
     <div class="col-lg-6 text-part">
       <p class="small">產品編號：M106192065</p>

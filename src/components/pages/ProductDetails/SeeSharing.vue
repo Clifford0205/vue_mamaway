@@ -3,7 +3,22 @@
     <div class="area-900">
       <h2>見證分享</h2>
       <div class="carousel-area">
-        <carousel :loop="true" :margin="30">
+        <carousel
+          :loop="true"
+          :margin="30"
+          :responsive="{
+          0: {
+            items: 2,
+            margin:30,
+            nav: false,
+            center: true,
+            autoWidth:true,
+          },
+          996: {
+            item: 3
+          }
+        }"
+        >
           <div class="item">
             <a href>
               <div class="img-area">

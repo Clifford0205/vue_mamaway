@@ -36,6 +36,12 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/all.scss";
 
+.top-float {
+  @include lg {
+    display: none;
+  }
+}
+
 .btn-menu {
   @include lg {
     display: none;
