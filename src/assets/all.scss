@@ -12,6 +12,7 @@
 body {
     margin: 0;
     padding: 0;
+    position: relative;
 
     .transition {
         transition: 0.4s;
@@ -564,6 +565,17 @@ body {
                 font-size: 18px;
             }
         }
+    }
+
+    .add-in-cart-mobile {
+        background-color: #fff;
+        height: 80px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 800;
+        display: none;
     }
 
     //側邊選單開始
