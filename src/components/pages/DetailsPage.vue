@@ -1,5 +1,5 @@
 <template>
-  <div class="details-page container">
+  <div class="details-page">
     <div>
       <Breadcrumb class="breadcrumb" />
       <AddInCart />

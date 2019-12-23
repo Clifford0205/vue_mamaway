@@ -4,7 +4,7 @@
       <div class="btns">
         <a class="menubtn active">商品內容</a>
         <a class="menubtn">尺寸表</a>
-        <a class="menubtn">商品規格</a>
+        <a class="menubtn">商品材質</a>
       </div>
     </div>
 
@@ -33,6 +33,75 @@
     <div class="size-table">
       <img src="~@/assets/img/photos/尺寸表.svg" alt />
     </div>
+
+    <div class="product-detail">
+      <div class="mobile-content">
+        <a class="expand-item" @click.prevent="expandItem">
+          <div class="expand-menu-title">
+            尺寸表
+            <i class="fas fa-chevron-right transition"></i>
+          </div>
+
+          <div class="expand-content transition"></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="product-detail">
+      <div class="mobile-content">
+        <a class="expand-item" @click.prevent="expandItem">
+          <div class="expand-menu-title">
+            商品描述
+            <i class="fas fa-chevron-right transition"></i>
+          </div>
+
+          <div class="expand-content transition"></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="product-detail">
+      <div class="mobile-content">
+        <a class="expand-item" @click.prevent="expandItem">
+          <div class="expand-menu-title">
+            商品材質
+            <i class="fas fa-chevron-right transition"></i>
+          </div>
+
+          <div class="expand-content transition">
+            <ul class="texture">
+              <li>MAIN：100%POLYESTER</li>
+              <li>OTHER：96%COTTON 4%POLYESTER</li>
+              <li>哺乳開口：門襟式-兩側腋下哺乳開口</li>
+              <li>洗滌：機洗/低溫/入袋/反面/不可浸泡/不可漂白/不可烘乾</li>
+              <li>彈性：適中</li>
+              <li>產地：台灣</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="product-detail">
+      <div class="mobile-content">
+        <a class="expand-item" @click.prevent="expandItem">
+          <div class="expand-menu-title">
+            商品詳情
+            <i class="fas fa-chevron-right transition"></i>
+          </div>
+
+          <div class="expand-content transition">
+            <div class="Intro-img-mobile">
+              <img src="~@/assets/img/photos/B101192720-1000@2x.png" alt />
+            </div>
+
+            <div class="size-table-mobile">
+              <img src="~@/assets/img/photos/尺寸表.svg" alt />
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -42,10 +111,18 @@ import carousel from "vue-owl-carousel";
 
 export default {
   data() {
-    return {};
+    return {
+      // expand: false
+    };
   },
   components: {
     carousel
+  },
+  methods: {
+    expandItem: function() {
+      // this.expand = !this.expand;
+      $(".expand-item").toggleClass("open-menu");
+    }
   }
 };
 </script>
