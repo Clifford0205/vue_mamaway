@@ -77,6 +77,7 @@
       </div>-->
 
       <router-view name="sortmenu"></router-view>
+      <router-view name="sortmenuimg"></router-view>
     </div>
 
     <!-- fixed留白區域 -->
@@ -125,13 +126,20 @@ export default {
     if (this.$route.path !== "/") {
       $(".makeup-block").addClass("no-sort");
     }
+
+    if (this.$route.path == "/product_intro") {
+      $(".makeup-block").removeClass("no-sort");
+    }
   },
 
   mounted() {
     // alert($(".sort-menu").length);
     console.log(this.$route.path);
-    if (this.$route.path !== "/") {
+    if (this.$route.path !== "/" || this.$route.path !== "/product_intro") {
       $(".makeup-block").addClass("no-sort");
+    }
+    if (this.$route.path == "/product_intro") {
+      $(".makeup-block").removeClass("no-sort");
     }
 
     if ($(".sort-menu").length == 0) {

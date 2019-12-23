@@ -4,10 +4,12 @@ import VueRouter from 'vue-router'
 
 import Home from '@/components/Home';
 import SortMenu from '@/components/SortMenu';
+import SortMenuImg from '@/components/SortMenuImg';
 import ProductDetails from '@/components/ProductDetails'
 import DetailsPage from '@/components/pages/DetailsPage'
 import HomeIndex from '@/components/pages/HomeIndex'
 import ProductList from '@/components/pages/ProductList'
+import ProductIntro from '@/components/pages/ProductIntro'
 import Page from '@/components/pages/page';
 import child from '@/components/pages/child';
 import child2 from '@/components/pages/child2';
@@ -40,6 +42,14 @@ export default new VueRouter({
                     name:'商品列表',
                     path:'product_list',
                     component:ProductList,
+                },
+                {
+                    name:'商品介紹頁',
+                    path:'product_intro',
+                    components:{
+                        default:ProductIntro,
+                        sortmenuimg:SortMenuImg,
+                    }, 
                 }
             ]
         },

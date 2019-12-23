@@ -2357,8 +2357,9 @@ body {
 
     .breadcrumb {
         display: none;
-        font-size: 10px;
+        font-size: 14px;
         padding: 10px;
+        color: #525C68;
         background-color: unset;
         margin: 0;
 
@@ -3937,6 +3938,131 @@ body {
     }
 
     // 產品詳細頁面結束
+
+    //產品介紹頁面開始
+    .product-intro-page {
+        max-width: 1200px;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin: 0 auto;
+
+        .intro-kv {
+            a {
+                display: block;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .expand-bar {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+
+
+            .expand-item {
+                display: block;
+                background-color: #F3F4F7;
+                padding: 20px;
+                margin-bottom: 10px;
+                flex-basis: 100%;
+
+                .expand-menu-title {
+
+                    display: flex;
+
+                    i {
+                        margin-left: auto;
+                    }
+                }
+
+                @include lg {
+                    flex-basis: 43%;
+                    margin: 10px;
+                }
+            }
+
+
+        }
+
+        .intro-slider {
+            margin-top: 20px;
+
+            .carousel-area {
+
+                .owl-dots {
+                    position: absolute;
+                    bottom: -20px;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+
+                    .owl-dot.active {
+                        span {
+                            width: 20px;
+                            height: 5px;
+                            background-color: #fd4337;
+                            border-radius: 0;
+                        }
+                    }
+
+                    .owl-dot {
+                        span {
+                            width: 20px;
+                            height: 5px;
+                            background-color: #a7acb2;
+                            border-radius: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .video {
+            margin-top: 85px;
+
+            iframe {
+                width: 100%;
+                height: 675px;
+
+                @include lg {
+                    height: 260px;
+
+                }
+            }
+        }
+
+        .look-all {
+            margin-top: 40px;
+
+            .look-bar {
+                background-color: #000000;
+                display: block;
+                color: #fff;
+                max-width: 800px;
+                height: 50px;
+                line-height: 50px;
+                border-radius: 5px;
+                font-size: 18px;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 40px;
+            }
+
+            .intro-img-area {
+                margin-top: 60px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    //產品介紹頁面結束
 
     .filter-page {
         position: fixed;

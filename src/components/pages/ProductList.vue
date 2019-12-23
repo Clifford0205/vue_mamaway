@@ -1,6 +1,6 @@
 <template>
   <div class>
-    <Breadcrumb />
+    <!-- <Breadcrumb /> -->
     <ProductKv />
     <ContentArea />
   </div>
