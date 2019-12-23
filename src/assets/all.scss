@@ -503,6 +503,69 @@ body {
 
     }
 
+    .bottom-menu-cart {
+        display: none;
+
+        @include lg {
+            background-color: #fd4337;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            // padding: 5px 15px;
+            display: flex;
+            z-index: 200;
+        }
+
+        .menu-btn {
+            background-color: unset;
+            border: none;
+            flex: 0 1 20%;
+            position: relative;
+            padding: 5px 0;
+
+            img {
+                width: 28px;
+                height: 28px;
+            }
+
+            .num {
+                position: absolute;
+                top: 10px;
+                right: 12px;
+                font-size: 10px;
+                width: 18px;
+                // height: 14px;
+                padding: 1px 0;
+                border-radius: 10px;
+                background-color: #000;
+                color: #fff;
+
+                @include lg {
+                    right: 35%;
+                }
+
+                @include md {
+                    right: 26%;
+                }
+            }
+
+            p {
+                color: #fff;
+                margin-top: 5px;
+                white-space: nowrap;
+            }
+        }
+
+        .menu-btn:last-child {
+            background-color: #000000;
+            padding: 5px 15px;
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
     //側邊選單開始
     .big-menu {
         position: fixed;
@@ -2280,6 +2343,16 @@ body {
         }
     }
 
+    .mobile-block-mobile {
+        width: 100%;
+        height: 61px;
+        display: none;
+
+        @include lg {
+            display: block;
+        }
+    }
+
     //產品列表頁開始
 
     .breadcrumb {
@@ -3042,8 +3115,32 @@ body {
         .mobile-slider {
             display: none;
 
+
             @include lg {
                 display: block;
+                position: relative;
+            }
+
+            .goback {
+                position: absolute;
+                top: 10px;
+                left: 15px;
+                z-index: 100;
+            }
+
+            .number {
+                position: absolute;
+                z-index: 100;
+                background-color: rgba(64, 64, 64, 0.8);
+                border-radius: 15px;
+                right: 15px;
+                bottom: 15px;
+                color: #fff;
+                font-size: 9px;
+                padding: 5px 10px;
+
+
+                span {}
             }
         }
 
@@ -3536,7 +3633,7 @@ body {
                                 // height: 410px;
 
                                 @include lg {
-                                    width: 150px;
+                                    min-width: 150px;
                                     // height: 188px;
                                 }
 

@@ -4,18 +4,21 @@
       <h2>見證分享</h2>
       <div class="carousel-area">
         <carousel
+          :dots="true"
+          :items="3"
           :loop="true"
+          :nav="true"
           :margin="30"
           :responsive="{
           0: {
+            dots: true,
             items: 2,
-            margin:30,
             nav: false,
-            center: true,
-            autoWidth:true,
+            margin: 5
           },
           996: {
-            item: 3
+            dots: false,
+            items: 3
           }
         }"
         >

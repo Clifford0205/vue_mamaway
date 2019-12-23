@@ -4,7 +4,8 @@
     <router-view></router-view>
     <CustomerInfo />
     <Footer />
-    <BottomMenu class="btn-menu" />
+
+    <BottomMenuCart />
     <BigMenu />
     <FilterPage />
     <GoTop />
@@ -15,7 +16,8 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import CustomerInfo from "./CustomerInfo";
-import BottomMenu from "./BottomMenu";
+
+import BottomMenuCart from "./BottomMenuCart";
 import BigMenu from "./BigMenu";
 import FilterPage from "./FilterPage";
 import GoTop from "./GoTop";
@@ -25,10 +27,11 @@ export default {
     Navbar,
     Footer,
     CustomerInfo,
-    BottomMenu,
+
     BigMenu,
     GoTop,
-    FilterPage
+    FilterPage,
+    BottomMenuCart
   }
 };
 </script>

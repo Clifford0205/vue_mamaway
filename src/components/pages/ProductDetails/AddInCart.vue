@@ -40,6 +40,13 @@
     </div>
 
     <div class="col-lg-6 mobile-slider">
+      <a class="goback">
+        <img src="~@/assets/img/icons/组件 39 – 3.svg" alt />
+      </a>
+      <div class="number">
+        <span class="current">1</span> /
+        <span class="total">8</span>
+      </div>
       <carousel
         :dots="false"
         :items="1"
