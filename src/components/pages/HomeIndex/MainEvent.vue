@@ -27,12 +27,12 @@
           </router-link>
         </div>
         <div class="item">
-          <a href>
+          <router-link to="/product_intro">
             <div class="img-area">
               <img src="~@/assets/img/photos/蒙版组 2@3x@2x.png" alt />
             </div>
             <p>無縫孕哺內衣2件7折</p>
-          </a>
+          </router-link>
         </div>
         <div class="item">
           <a href>

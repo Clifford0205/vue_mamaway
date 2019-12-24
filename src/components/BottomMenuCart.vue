@@ -23,7 +23,7 @@
         <span class="num">1</span>
         <p>購物車</p>
       </button>
-      <button class="menu-btn">
+      <button class="menu-btn" @click="openAddCart">
         <p>加入購物車</p>
       </button>
     </div>
@@ -44,6 +44,10 @@ export default {
       setTimeout(function() {
         $(".big-menu").addClass("menu-show");
       }, 500);
+    },
+
+    openAddCart: function() {
+      $(".add-in-cart-mobile").css({ display: "block" });
     }
   }
 };

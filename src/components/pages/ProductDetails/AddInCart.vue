@@ -172,7 +172,7 @@
           <button class="plus">+</button>
         </div>
 
-        <button class="add-in">加入購物車</button>
+        <button class="add-in" @click="openCartMobile">加入購物車</button>
       </div>
     </div>
   </div>
@@ -188,6 +188,16 @@ export default {
   },
   components: {
     carousel
+  },
+
+  methods: {
+    openMenu: function() {
+      $(".add-in-cart-mobile").css({ display: "block" });
+    }
+    // closeDArea: function() {
+    //   $(".download-area").css({ display: "none" });
+    //   $(".makeup-block").addClass("short");
+    // }
   }
 };
 </script>
