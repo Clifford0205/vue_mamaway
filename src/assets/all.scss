@@ -3030,6 +3030,16 @@ body {
                         }
                     }
 
+                    .filter-btn.active {
+                        background-color: #F3F4F7;
+                        border: none;
+
+                        i {
+                            transform: rotate(180deg);
+                            ;
+                        }
+                    }
+
                     .arrange {
                         margin-left: 20px;
 
@@ -3100,13 +3110,19 @@ body {
 
         }
 
+        .content-list-nav.show {
+            padding-bottom: 0;
+            border: none;
+        }
+
         .filter-box {
             width: 100%;
             background-color: #F3F4F7;
-            display: flex;
             font-size: 14px;
             color: #525B67;
             padding: 20px;
+            display: none;
+            border-bottom: 1px solid #D3D8DE;
 
             .single-item {
                 flex: 0 0 33.33333%;
@@ -3192,6 +3208,10 @@ body {
             .single-item:last-child {
                 flex-shrink: 1;
             }
+        }
+
+        .filter-box.show {
+            display: flex;
         }
 
         .products {

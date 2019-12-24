@@ -1,5 +1,5 @@
 <template>
-  <div class="content-list-nav">
+  <div class="content-list-nav" :class="{show:isShow}">
     <div class="top-nav">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -16,7 +16,7 @@
       </nav>
 
       <div class="d-flex ar-nav">
-        <button class="filter-btn">
+        <button class="filter-btn" :class="{active:isFilterBlock}" @click="openFilterBlock">
           <img src="~@/assets/img/icons/组件 33 – 3.svg" alt />
           <span>篩選</span>
           <i class="fas fa-chevron-down"></i>
@@ -86,16 +86,8 @@ import "vue-select/src/scss/vue-select.scss";
 export default {
   data() {
     return {
-      options: [
-        {
-          title: "Visa",
-          cardImage: "~@/assets/img/icons/组件 33 – 3.svg"
-        },
-        {
-          title: "country1",
-          cardImage: "https://via.placeholder.com/20"
-        }
-      ]
+      isShow: false,
+      isFilterBlock: false
     };
   },
   components: {
@@ -105,6 +97,13 @@ export default {
   methods: {
     openFilter: function() {
       $(".filter-page").css({ display: "block" });
+    },
+
+    openFilterBlock: function() {
+      let vm = this;
+      vm.isFilterBlock = !vm.isFilterBlock;
+      vm.isShow = !vm.isShow;
+      $(".filter-box").toggleClass("show");
     }
   }
 };
