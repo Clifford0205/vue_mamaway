@@ -2,11 +2,12 @@
   <div>
     <div class="contentarea">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-3">
           <Classification />
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-9">
           <ContentListNav />
+          <FilterBox />
           <Products />
           <Pagination />
         </div>
@@ -20,6 +21,7 @@ import $ from "jquery";
 import carousel from "vue-owl-carousel";
 import Classification from "./Classification";
 import ContentListNav from "./ContentListNav";
+import FilterBox from "./FilterBox";
 import Products from "./Products";
 import Pagination from "./Pagination";
 
@@ -32,7 +34,8 @@ export default {
     Classification,
     ContentListNav,
     Products,
-    Pagination
+    Pagination,
+    FilterBox
   }
 };
 </script>

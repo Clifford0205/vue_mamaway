@@ -16,12 +16,17 @@
       </nav>
 
       <div class="d-flex ar-nav">
-        <v-select :options="options" label="title">
-          <template slot="option" slot-scope="option">
-            <img :src="option.cardImage" />
-            {{ option.title }}
-          </template>
-        </v-select>
+        <button class="filter-btn">
+          <img src="~@/assets/img/icons/组件 33 – 3.svg" alt />
+          <span>篩選</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+
+        <button class="sort-btn">
+          <img src="~@/assets/img/icons/组件 34 – 3.svg" alt />
+          <span>排序</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
 
         <a href class="arrange active">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
