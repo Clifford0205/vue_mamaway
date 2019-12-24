@@ -96,6 +96,7 @@ export default {
   },
   methods: {
     openFilter: function() {
+      $("body").addClass("filter-page-open");
       $(".filter-page").css({ display: "block" });
     },
 

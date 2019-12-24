@@ -4411,6 +4411,8 @@ body {
 
     //產品介紹頁面結束
 
+
+    //手機版篩選頁面開始
     .filter-page {
         position: fixed;
         top: 0;
@@ -4419,5 +4421,157 @@ body {
         left: 0;
         background-color: rgba(255, 255, 255, 1);
         z-index: 800;
+        color: #525B67;
+        font-size: 14px;
+        display: none;
+
+        .top-btns {
+            display: flex;
+            font-size: 12px;
+            padding: 10px 20px;
+            justify-content: space-between;
+            border-bottom: 2px solid #D3D8DE;
+
+            button {
+                border: none;
+                background-color: unset;
+            }
+
+            .clear-all {
+                border: 1px solid #525B67;
+                padding: 6px 12px;
+                display: flex;
+                align-items: center;
+
+                span {
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        .filter-items {
+            padding: 20px;
+
+            .single-item {
+                margin-bottom: 6px;
+
+                .item-titile {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #D3D8DE;
+
+                }
+
+                .options {
+                    margin-top: 20px;
+                    width: 80%;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    button {
+                        font-size: 14px;
+                        color: #525B67;
+                        border: 1px solid #525B67;
+                        background-color: unset;
+                        padding: 8px 16px;
+                        // margin-right: 10px;
+                        margin-left: 0px;
+                        margin-right: 15px;
+                        margin-bottom: 15px;
+                    }
+
+                    .sold-out {
+                        border: 1px solid #FD4337;
+                        background-color: #FFD2CF;
+                        color: #FD4337;
+                        position: relative;
+
+                        .triangle {
+                            position: absolute;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 0 0 15px 15px;
+                            border-color: transparent transparent #FD4337 transparent;
+                            bottom: 0;
+                            right: 0;
+
+                            // background-image: url('~@/assets/img/icons/icn_close10.svg');
+                            // background-position: center center;
+                            // background-size: 10px 10px;
+                            // background-repeat: no-repeat;
+                        }
+
+                        img {
+                            position: absolute;
+                            right: -1px;
+                            bottom: 0;
+                        }
+                    }
+
+                    .price-area {
+                        align-items: center;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    input {
+                        background-color: unset;
+                        border: 1px solid #525B67;
+                        text-align: center;
+                        color: #B2B7BD;
+                        padding: 8px 0;
+                        width: 115px;
+
+                    }
+
+                    .range {
+                        font-size: 20px;
+                        // padding-right: 15px;
+                        // padding-left: 15px;
+                        text-align: center;
+                        width: 50px;
+                        color: #525B67;
+
+                    }
+
+                    .filter-btn {
+                        background-color: #525B67;
+                        color: #fff;
+                        padding: 8px 0;
+                        width: 100%;
+                        margin-top: 20px;
+                    }
+                }
+
+
+            }
+
+            .single-item:last-child {
+                .options {
+                    width: 100%;
+
+                    button {
+                        margin: 0;
+                        margin-top: 51px;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+
+
+    //手機版篩選頁面結束
+}
+
+.filter-page-open {
+    .filter-page {
+        overflow-y: auto;
     }
 }
