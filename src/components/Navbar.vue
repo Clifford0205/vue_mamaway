@@ -23,14 +23,18 @@
                 <img src="~@/assets/img/icons/icn_search.svg" alt />
               </button>
 
-              <button class="open-sch-forweb transition">
+              <button
+                class="open-sch-forweb transition"
+                :class="{noshow:schNoShow}"
+                @click="showTheInput"
+              >
                 <img src="~@/assets/img/icons/icn_search.svg" alt />
               </button>
 
-              <div class="search-for-web transition">
+              <div class="search-for-web transition" :class="{show:schBarShow}">
                 <div class="search-bar-area d-flex align-items-center justify-content-between">
                   <input type="text" placeholder="search" class="search-bar" />
-                  <button class="search-btn">
+                  <button class="search-btn" @click="hideInput">
                     <img src="~@/assets/img/icons/icn_search.svg" alt />
                   </button>
                 </div>
@@ -93,7 +97,9 @@ import carousel from "vue-owl-carousel";
 export default {
   data() {
     return {
-      route: this.$route.path
+      route: this.$route.path,
+      schNoShow: false,
+      schBarShow: false
     };
   },
   components: {
@@ -109,6 +115,34 @@ export default {
     closeDArea: function() {
       $(".download-area").css({ display: "none" });
       $(".makeup-block").addClass("short");
+    },
+
+    showTheInput: function(e) {
+      let vm = this;
+      vm.schNoShow = !vm.schNoShow;
+      setTimeout(function() {
+        e.target.parentNode.style.display = "none";
+        $(".search-for-web").css({ display: "inline-block" });
+        //search BAR出現的動畫
+        setTimeout(function() {
+          vm.schBarShow = !vm.schBarShow;
+        }, 200);
+      }, 200);
+      console.log(e.target.parentNode);
+    },
+
+    hideInput: function(e) {
+      let vm = this;
+      vm.schBarShow = !vm.schBarShow;
+      //search BAR消失的動畫
+      setTimeout(function() {
+        $(".search-for-web").css({ display: "none" });
+        $(".open-sch-forweb").css({ display: "block" });
+        //出現指標的動畫
+        setTimeout(function() {
+          vm.schNoShow = !vm.schNoShow;
+        }, 200);
+      }, 200);
     }
   },
 
