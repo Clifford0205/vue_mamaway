@@ -1446,7 +1446,7 @@ body {
 
                     .img-area {
                         max-width: 345px;
-                        height: 478px;
+                        // height: 478px;
                         position: relative;
 
                         @include lg {
@@ -3373,13 +3373,15 @@ body {
     // 產品詳細頁面
 
     .details-page {
-        max-width: 1140px;
+        max-width: 1200px;
+        width: 90%;
         padding-right: 0px;
         padding-left: 0px;
         margin: 0 auto;
 
         @include lg {
             background-color: #F3F4F7;
+            width: 100%;
         }
 
         .add-in-cart {
@@ -3471,6 +3473,7 @@ body {
 
             .goback {
                 position: absolute;
+                cursor: pointer;
                 top: 10px;
                 left: 15px;
                 z-index: 100;
@@ -3776,7 +3779,8 @@ body {
 
 
         .product-content {
-            width: 900px;
+            max-width: 900px;
+            width: 85%;
             margin: 0 auto;
             margin-top: 70px;
             display: block;
@@ -3950,6 +3954,7 @@ body {
 
             .area-900 {
                 max-width: 900px;
+                width: 85%;
                 margin: 0 auto;
 
                 h2 {
@@ -4015,7 +4020,7 @@ body {
                         }
 
                         .owl-prev {
-                            left: -10%;
+                            left: -8%;
                             top: 50%;
                             transform: translate(0, -50%);
                             background-image: url('~@/assets/img/icons/icn_arrow_l_b.svg');
@@ -4036,7 +4041,7 @@ body {
                         }
 
                         .owl-next {
-                            right: -10%;
+                            right: -8%;
                             top: 50%;
                             transform: translate(0, -50%);
                             background-image: url('~@/assets/img/icons/icn_arrow_r_b.svg');
@@ -4088,7 +4093,7 @@ body {
             }
         }
 
-        .recommend {
+        .recommend-De {
             padding-bottom: 0;
             margin-top: 0;
             margin-bottom: 60px;
@@ -4115,6 +4120,7 @@ body {
                 }
 
                 .owl-carousel {
+                    max-width: 1140px;
                     width: 100%;
                     margin: 0 auto;
 
@@ -4229,6 +4235,8 @@ body {
 
                     .owl-prev,
                     .owl-next {
+                        margin: 0;
+                        padding: 0;
                         position: absolute;
                         height: 80px;
                         width: 60px;
@@ -4239,8 +4247,8 @@ body {
                     }
 
                     .owl-prev {
-                        left: -4%;
-                        top: 50%;
+                        left: -5%;
+                        top: 45%;
                         transform: translate(0, -50%);
                         background-image: url('~@/assets/img/icons/icn_arrow_l_b.svg');
                         background-size: 115px 55px;
@@ -4260,8 +4268,8 @@ body {
                     }
 
                     .owl-next {
-                        right: -4%;
-                        top: 50%;
+                        right: -5%;
+                        top: 45%;
                         transform: translate(0, -50%);
                         background-image: url('~@/assets/img/icons/icn_arrow_r_b.svg');
                         background-size: 115px 55px;

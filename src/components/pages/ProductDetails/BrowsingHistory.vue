@@ -1,5 +1,5 @@
 <template>
-  <div class="recommend">
+  <div class="recommend-De">
     <h2>瀏覽紀錄</h2>
     <div class="the-line"></div>
     <div class="carousel-area">

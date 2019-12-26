@@ -40,7 +40,7 @@
     </div>
 
     <div class="col-lg-6 mobile-slider">
-      <a class="goback">
+      <a class="goback" @click.prevent="beforePath">
         <img src="~@/assets/img/icons/组件 39 – 3.svg" alt />
       </a>
       <div class="number">
@@ -193,6 +193,9 @@ export default {
   methods: {
     openMenu: function() {
       $(".add-in-cart-mobile").css({ display: "block" });
+    },
+    beforePath: function() {
+      this.$router.go(-1);
     }
     // closeDArea: function() {
     //   $(".download-area").css({ display: "none" });

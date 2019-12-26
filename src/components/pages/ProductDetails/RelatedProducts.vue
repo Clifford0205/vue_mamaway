@@ -1,5 +1,5 @@
 <template>
-  <div class="recommend">
+  <div class="recommend-De">
     <h2>相關商品</h2>
     <div class="the-line"></div>
     <div class="carousel-area">

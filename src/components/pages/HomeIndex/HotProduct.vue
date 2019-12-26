@@ -5,7 +5,7 @@
       <carousel
         :dots="false"
         :items="5"
-        :margin="6.5"
+        :margin="26"
         :loop="true"
         :responsive="{
           0: {
