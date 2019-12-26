@@ -9,7 +9,22 @@
                 src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png"
                 alt
                 @click.capture="showSlider"
+                class="start-img"
               />
+              <carousel :items="1" :dots="true" :nav="true" class="the-carousel">
+                <div class="slider-item">
+                  <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
+                </div>
+
+                <div class="slider-item">
+                  <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
+                </div>
+
+                <div class="slider-item">
+                  <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
+                </div>
+              </carousel>
+
               <div class="circle">
                 <object>
                   <a href="https://github.com/dashboard" class="love-area">
@@ -612,7 +627,9 @@ export default {
     carousel
   },
   methods: {
-    showSlider: function() {
+    showSlider: function(e) {
+      e.preventDefault();
+
       alert("ggg");
     },
     routerClick: function() {

@@ -67,7 +67,7 @@
         </div>
       </div>
 
-      <!-- <div class="sort-menu">
+      <div class="sort-menu">
         <carousel :items="4" :dots="false" :nav="false">
           <a class="text-center classify activity">孕哺時尚</a>
           <a class="text-center classify">迪士尼</a>
@@ -78,9 +78,9 @@
           <a class="text-center classify">機能用品</a>
           <a class="text-center classify">寶寶衣著</a>
         </carousel>
-      </div>-->
+      </div>
 
-      <router-view name="sortmenu"></router-view>
+      <!-- <router-view name="sortmenu"></router-view> -->
       <router-view name="sortmenuimg"></router-view>
     </div>
 
@@ -143,42 +143,54 @@ export default {
           vm.schNoShow = !vm.schNoShow;
         }, 200);
       }, 200);
+    },
+
+    sortChange: function() {
+      if (this.$route.path == "/product_intro") {
+        $(".makeup-block").addClass("two-sort");
+      } else {
+        $(".makeup-block").removeClass("two-sort");
+      }
     }
   },
 
   watch: {
-    route: function() {
-      alert("vvv");
-    }
     // $route(to, from) {
-    //   alert("vvv");
+    //   alert("路徑改變");
+    //   console.log("路徑改變");
+    //   if (this.$route.path == "/product_intro") {
+    //     $(".makeup-block").addClass("two-sort");
+    //   } else {
+    //     $(".makeup-block").removeClass("two-sort");
+    //   }
     // }
   },
 
   updated() {
-    console.log(this.$route.path);
-    if (this.$route.path !== "/") {
-      $(".makeup-block").addClass("no-sort");
-    }
-
-    if (this.$route.path == "/product_intro") {
-      $(".makeup-block").removeClass("no-sort");
-    }
+    this.sortChange();
+    // console.log(this.$route);
+    // console.log(this.$route.path);
+    // if (this.$route.path !== "/") {
+    //   $(".makeup-block").addClass("no-sort");
+    // }
+    // if (this.$route.path == "/product_intro") {
+    //   $(".makeup-block").addClass("two-sort");
+    // }
   },
 
   mounted() {
-    // alert($(".sort-menu").length);
-    console.log(this.$route.path);
-    if (this.$route.path !== "/" || this.$route.path !== "/product_intro") {
-      $(".makeup-block").addClass("no-sort");
-    }
-    if (this.$route.path == "/product_intro") {
-      $(".makeup-block").removeClass("no-sort");
-    }
-
-    if ($(".sort-menu").length == 0) {
-      $(".makeup-block").addClass("no-sort");
-    }
+    this.sortChange();
+    // console.log(this.$route);
+    // console.log(this.$route.path);
+    // if (this.$route.path !== "/" || this.$route.path !== "/product_intro") {
+    //   $(".makeup-block").addClass("no-sort");
+    // }
+    // if (this.$route.path == "/product_intro") {
+    //   $(".makeup-block").addClass("two-sort");
+    // }
+    // if ($(".sort-menu").length == 0) {
+    //   $(".makeup-block").addClass("no-sort");
+    // }
   }
 };
 </script>
