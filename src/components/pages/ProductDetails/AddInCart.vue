@@ -172,7 +172,7 @@
           <button class="plus">+</button>
         </div>
 
-        <button class="add-in" @click="openCartMobile">加入購物車</button>
+        <button class="add-in">加入購物車</button>
       </div>
     </div>
   </div>

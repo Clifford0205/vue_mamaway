@@ -598,6 +598,7 @@ body {
 
                 .img-area {
                     flex-basis: 50%;
+                    max-width: 300px;
 
                     img {
                         width: 100%;
@@ -1164,6 +1165,8 @@ body {
 
         .forweb {
             display: flex;
+            width: 80%;
+            margin: 0 auto;
 
             @include lg {
                 display: none;
@@ -1174,7 +1177,7 @@ body {
 
                 .img-area {
                     max-width: 390px;
-                    height: 270px;
+                    // height: 270px;
 
                     img {
                         width: 100%;
@@ -1558,8 +1561,8 @@ body {
                 }
 
                 .owl-prev {
-                    left: -4%;
-                    top: 50%;
+                    left: -5%;
+                    top: 45%;
                     transform: translate(0, -50%);
                     background-image: url('~@/assets/img/icons/icn_arrow_l_b.svg');
                     background-size: 115px 55px;
@@ -1579,8 +1582,8 @@ body {
                 }
 
                 .owl-next {
-                    right: -4%;
-                    top: 50%;
+                    right: -5%;
+                    top: 45%;
                     transform: translate(0, -50%);
                     background-image: url('~@/assets/img/icons/icn_arrow_r_b.svg');
                     background-size: 115px 55px;
@@ -4579,6 +4582,8 @@ body {
 }
 
 .filter-page-open {
+    overflow-y: hidden;
+
     .filter-page {
         overflow-y: auto;
     }

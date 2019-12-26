@@ -77,6 +77,7 @@ export default {
   methods: {
     closeFilter: function() {
       $(".filter-page").css({ display: "none" });
+      $("body").removeClass("filter-page-open");
     }
   }
 };

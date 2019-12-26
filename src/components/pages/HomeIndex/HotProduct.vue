@@ -21,12 +21,12 @@
         }"
       >
         <div class="item">
-          <a href>
+          <router-link to="/product_list">
             <div class="img-area">
               <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
               <div class="circle">
                 <object>
-                  <a href="https://github.com/dashboard" class="love-area">
+                  <a href="https://github.com/dashboard" class="love-area" @click="showBlack">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -41,6 +41,7 @@
                     </svg>
                     <svg
                       class="black transition"
+                      :class="{show:isShow}"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="20.16"
@@ -64,7 +65,7 @@
             <object>
               <a class="buy">買2送1</a>
             </object>
-          </a>
+          </router-link>
         </div>
         <div class="item">
           <a href>
@@ -309,10 +310,21 @@ import carousel from "vue-owl-carousel";
 
 export default {
   data() {
-    return {};
+    return {
+      isShow: false
+    };
   },
   components: {
     carousel
+  },
+  methods: {
+    showBlack: function(e) {
+      event.preventDefault();
+      let vm = this;
+      vm.isShow = !vm.isShow;
+      e.target.parentNode.querySelector(".black");
+      console.log(e.target.parentNode.querySelector(".black"));
+    }
   }
 };
 </script>
