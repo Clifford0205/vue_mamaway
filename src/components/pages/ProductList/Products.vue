@@ -1,7 +1,7 @@
 <template>
   <div class="products">
     <div class="row">
-      <div class="single-product col-lg-3 col-6">
+      <!-- <div class="single-product col-lg-3 col-6">
         <div class="item">
           <router-link to="/product_details">
             <div class="img-area">
@@ -44,7 +44,7 @@
                 </div>
               </carousel>
 
-              <!-- <button @click.capture="test">></button> -->
+            
 
               <div class="circle">
                 <object>
@@ -88,7 +88,8 @@
             </object>
           </router-link>
         </div>
-      </div>
+      </div>-->
+      <Product v-for="(item, index) in InfoData" :key="index" :product="item"></Product>
     </div>
   </div>
 </template>
@@ -97,18 +98,85 @@
 import $ from "jquery";
 // import carousel from "vue-owl-carousel";
 import carousel from "@/components/library/Carousel";
+import Product from "@/components/pages/ProductList/Product";
 
 export default {
   data() {
     return {
-      isThreeCol: false,
-      isCaShow: "none",
-      isImgShow: "block",
-
       InfoData: [
         {
-          img: "M106192065-900n@3x-1@2x.png",
-          carouselImg: "M106192065-900n@3x-1@2x.png",
+          img: require("@/assets/img/photos/M106192065-900n@3x-1@2x.png"),
+          carouselImg: require("@/assets/img/photos/M106192065-900n@3x-1@2x.png"),
+          title: "襯衫式印花孕哺洋裝(兩穿)",
+          oldPrice: "NT$1380",
+          newPrice: "NT$990"
+        },
+        {
+          img: require("@/assets/img/photos/M106192065-900n@3x-1@2x.png"),
+          carouselImg: require("@/assets/img/photos/M106192065-900n@3x-1@2x.png"),
+          title: "襯衫式印花孕哺洋裝(兩穿)",
+          oldPrice: "NT$1380",
+          newPrice: "NT$990"
+        },
+        {
+          img: require("@/assets/img/photos/M106192065-900n@3x-1@2x.png"),
+          carouselImg: require("@/assets/img/photos/M106192065-900n@3x-1@2x.png"),
+          title: "襯衫式印花孕哺洋裝(兩穿)",
+          oldPrice: "NT$1380",
+          newPrice: "NT$990"
+        },
+        {
+          img: require("@/assets/img/photos/M106192065-900n@3x-1@2x.png"),
+          carouselImg: require("@/assets/img/photos/M106192065-900n@3x-1@2x.png"),
+          title: "襯衫式印花孕哺洋裝(兩穿)",
+          oldPrice: "NT$1380",
+          newPrice: "NT$990"
+        },
+        {
+          img: require("@/assets/img/photos/M106192065-900n@3x-1@2x.png"),
+          carouselImg: require("@/assets/img/photos/M106192065-900n@3x-1@2x.png"),
+          title: "襯衫式印花孕哺洋裝(兩穿)",
+          oldPrice: "NT$1380",
+          newPrice: "NT$990"
+        },
+        {
+          img: require("@/assets/img/photos/M106192065-900n@3x-1@2x.png"),
+          carouselImg: require("@/assets/img/photos/M106192065-900n@3x-1@2x.png"),
+          title: "襯衫式印花孕哺洋裝(兩穿)",
+          oldPrice: "NT$1380",
+          newPrice: "NT$990"
+        },
+        {
+          img: require("@/assets/img/photos/M106192065-900n@3x-1@2x.png"),
+          carouselImg: require("@/assets/img/photos/M106192065-900n@3x-1@2x.png"),
+          title: "襯衫式印花孕哺洋裝(兩穿)",
+          oldPrice: "NT$1380",
+          newPrice: "NT$990"
+        },
+        {
+          img: require("@/assets/img/photos/M106192065-900n@3x-1@2x.png"),
+          carouselImg: require("@/assets/img/photos/M106192065-900n@3x-1@2x.png"),
+          title: "襯衫式印花孕哺洋裝(兩穿)",
+          oldPrice: "NT$1380",
+          newPrice: "NT$990"
+        },
+        {
+          img: require("@/assets/img/photos/M106192065-900n@3x-1@2x.png"),
+          carouselImg: require("@/assets/img/photos/M106192065-900n@3x-1@2x.png"),
+          title: "襯衫式印花孕哺洋裝(兩穿)",
+          oldPrice: "NT$1380",
+          newPrice: "NT$990"
+        },
+        {
+          img: require("@/assets/img/photos/M106192065-900n@3x-1@2x.png"),
+          carouselImg: require("@/assets/img/photos/M106192065-900n@3x-1@2x.png"),
+          title: "襯衫式印花孕哺洋裝(兩穿)",
+          oldPrice: "NT$1380",
+          newPrice: "NT$990"
+        },
+        {
+          img: require("@/assets/img/photos/M106192065-900n@3x-1@2x.png"),
+          carouselImg: require("@/assets/img/photos/M106192065-900n@3x-1@2x.png"),
           title: "襯衫式印花孕哺洋裝(兩穿)",
           oldPrice: "NT$1380",
           newPrice: "NT$990"
@@ -117,34 +185,9 @@ export default {
     };
   },
   components: {
-    carousel
+    Product
   },
-  methods: {
-    showSlider: function(e) {
-      let vm = this;
-      e.preventDefault();
-      vm.isImgShow = "none";
-      vm.isCaShow = "block";
-      // setTimeout(function() {
-      // }, 500);
-    },
-
-    sliderMove: function() {
-      e.preventDefault();
-    },
-
-    preventRoute: function(e) {
-      e.preventDefault();
-
-      // alert("test");
-    }
-    // test: function(e) {
-    //   e.preventDefault();
-    //   console.log(e.target.parentNode.querySelector(".owl-next"));
-    //   let next = e.target.parentNode.querySelector(".owl-next");
-    //   next.click();
-    // }
-  }
+  methods: {}
 };
 </script>
 
