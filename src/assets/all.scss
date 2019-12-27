@@ -283,12 +283,19 @@ body {
 
                             .float-member-item {
                                 display: flex;
+                                align-items: center;
                                 color: #A7ACB2;
                                 font-size: 18px;
                                 padding: 15px 25px;
+                                padding-left: 0;
                                 margin: 0 25px;
+                                // margin-left: 15px;
                                 border-bottom: 1px solid #00000029;
                                 white-space: nowrap;
+
+                                img {
+                                    margin-right: 20px;
+                                }
 
                                 .red-text {
                                     color: #FD4337;
@@ -310,6 +317,8 @@ body {
                                 padding-right: 0;
                                 border-bottom: none;
                                 margin: 0;
+                                height: 30px;
+                                box-sizing: content-box;
 
                                 p {
                                     margin-left: 40px;

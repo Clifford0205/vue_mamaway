@@ -78,40 +78,47 @@
                 </li>
                 <li>
                   <a class="float-member-item">
+                    <img src="~@/assets/img/icons/icn_bonus.svg" alt />
                     <p>紅利點數</p>
                     <p class="red-text four-text">30點</p>
                   </a>
                 </li>
                 <li>
                   <a class="float-member-item">
+                    <img src="~@/assets/img/icons/icn_stored.svg" alt />
                     <p>儲值金</p>
                     <p class="red-text">5000元</p>
                   </a>
                 </li>
                 <li>
                   <a class="float-member-item">
+                    <img src="~@/assets/img/icons/icn_ticket.svg" alt />
                     <p>抵用券</p>
                     <p class="red-text">1000元</p>
                   </a>
                 </li>
                 <li>
                   <a class="float-member-item">
+                    <img src="~@/assets/img/icons/icn_money.svg" alt />
                     <p>購物金</p>
                     <p class="red-text">1000元</p>
                   </a>
                 </li>
                 <li>
                   <a class="float-member-item">
+                    <img src="~@/assets/img/icons/icn_list2.svg" alt />
                     <p>購買訂單</p>
                   </a>
                 </li>
                 <li>
                   <a class="float-member-item">
+                    <img src="~@/assets/img/icons/icn_man 拷貝.svg" alt />
                     <p>帳號設定</p>
                   </a>
                 </li>
                 <li>
                   <a class="float-member-item">
+                    <img src="~@/assets/img/icons/icn_longout.svg" alt />
                     <p>登出</p>
                   </a>
                 </li>
