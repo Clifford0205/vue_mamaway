@@ -3405,11 +3405,33 @@ body {
                     }
 
                     .start-img {
-                        display: none;
+                        display: block;
                     }
 
                     .the-carousel {
                         width: 100%;
+                        position: relative;
+
+
+                        .prev {
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            transform: (0, -50%);
+                            z-index: 100;
+                            background-color: unset;
+                            border: none;
+                        }
+
+                        .next {
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: (0, -50%);
+                            z-index: 100;
+                            background-color: unset;
+                            border: none;
+                        }
 
 
                         .owl-dots {
