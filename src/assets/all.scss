@@ -138,6 +138,30 @@ body {
                         }
                     }
 
+                    .man {
+                        svg {
+                            .man-icon {
+                                fill: #a7acb2;
+                            }
+
+                            .back {
+                                fill: none;
+                            }
+                        }
+                    }
+
+                    .man.active {
+                        svg {
+                            .man-icon {
+                                fill: #FD4337;
+                            }
+
+                            .back {
+                                fill: none;
+                            }
+                        }
+                    }
+
                     .cart {
                         position: relative;
 
@@ -242,6 +266,70 @@ body {
                     //         display: none;
                     //     }
                     // }
+                }
+
+                .float-member-area {
+                    position: absolute;
+                    background-color: #fff;
+                    right: 100px;
+                    top: 60px;
+                    box-shadow: 0px 3px 6px #00000029;
+                    display: none;
+
+                    ul {
+                        li {
+
+
+
+                            .float-member-item {
+                                display: flex;
+                                color: #A7ACB2;
+                                font-size: 18px;
+                                padding: 15px 25px;
+                                margin: 0 25px;
+                                border-bottom: 1px solid #00000029;
+                                white-space: nowrap;
+
+                                .red-text {
+                                    color: #FD4337;
+                                    margin-left: 85px;
+                                    text-align: left;
+                                    min-width: 50px;
+                                }
+
+                                .four-text {
+                                    margin-left: 65px;
+                                }
+
+                            }
+
+                            .title {
+                                color: #525B67;
+                                background-color: #F3F4F7;
+                                padding-left: 0;
+                                padding-right: 0;
+                                border-bottom: none;
+                                margin: 0;
+
+                                p {
+                                    margin-left: 40px;
+                                }
+                            }
+
+                        }
+
+                        li:last-child {
+                            .float-member-item {
+                                border-bottom: none;
+                            }
+                        }
+                    }
+
+
+
+
+
+
                 }
             }
         }
@@ -3314,6 +3402,7 @@ body {
                     .the-carousel {
                         width: 100%;
 
+
                         .owl-dots {
                             position: absolute;
                             bottom: 10px;
@@ -3341,57 +3430,7 @@ body {
                             }
                         }
 
-                        .owl-prev,
-                        .owl-next {
-                            position: absolute;
-                            height: 80px;
-                            width: 60px;
-                            background-color: unset;
-                            border-radius: unset;
-                            font-size: 0;
 
-                        }
-
-                        .owl-prev {
-                            left: -8%;
-                            top: 50%;
-                            transform: translate(0, -50%);
-                            background-image: url('~@/assets/img/icons/icn_arrow_l_b.svg');
-                            background-size: 115px 55px;
-                            background-repeat: no-repeat;
-                            background-position: 45%;
-                            display: inline-block;
-
-
-                            // &:hover {
-                            //     background-color: unset;
-                            // }
-
-                            img {
-                                width: 48px;
-                                height: 48px;
-                            }
-                        }
-
-                        .owl-next {
-                            right: -8%;
-                            top: 50%;
-                            transform: translate(0, -50%);
-                            background-image: url('~@/assets/img/icons/icn_arrow_r_b.svg');
-                            background-size: 115px 55px;
-                            background-repeat: no-repeat;
-                            background-position: 45%;
-                            display: inline-block;
-
-                            // &:hover {
-                            //     background-color: unset;
-                            // }
-
-                            img {
-                                width: 48px;
-                                height: 48px;
-                            }
-                        }
                     }
 
                     .circle {

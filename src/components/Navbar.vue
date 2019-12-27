@@ -44,8 +44,22 @@
                 <img src="~@/assets/img/icons/icn_like_g.svg" alt />
               </button>
 
-              <button class="man">
-                <img src="~@/assets/img/icons/icn_man_g.svg" alt />
+              <button class="man" @click.stop="openDrop" :class="{active:isMemActive}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                  <g transform="translate(-273.646 -519.741)">
+                    <path
+                      class="man-icon"
+                      d="M403.428,15A5.69,5.69,0,0,1,397.8,9.25a5.629,5.629,0,1,1,11.255,0A5.69,5.69,0,0,1,403.428,15Zm0-10a4.251,4.251,0,1,0,4.16,4.25A4.206,4.206,0,0,0,403.428,5Z"
+                      transform="translate(-115.036 519.241)"
+                    />
+                    <path
+                      class="man-icon"
+                      d="M408.3,35.75h-1.468a10.034,10.034,0,1,0-20.064,0H385.3a11.5,11.5,0,1,1,23,0Z"
+                      transform="translate(-108.653 508.991)"
+                    />
+                  </g>
+                  <rect class="back" width="28" height="28" />
+                </svg>
               </button>
 
               <button class="cart">
@@ -53,6 +67,57 @@
                 <span class="num">1</span>
               </button>
             </div>
+
+            <!-- 會員下拉式選單 -->
+            <div class="float-member-area" :style="{display:memberShow}">
+              <ul>
+                <li>
+                  <a class="float-member-item title">
+                    <p>會員專區</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="float-member-item">
+                    <p>紅利點數</p>
+                    <p class="red-text four-text">30點</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="float-member-item">
+                    <p>儲值金</p>
+                    <p class="red-text">5000元</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="float-member-item">
+                    <p>抵用券</p>
+                    <p class="red-text">1000元</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="float-member-item">
+                    <p>購物金</p>
+                    <p class="red-text">1000元</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="float-member-item">
+                    <p>購買訂單</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="float-member-item">
+                    <p>帳號設定</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="float-member-item">
+                    <p>登出</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- 會員下拉式選單 -->
           </div>
         </nav>
 
@@ -99,7 +164,9 @@ export default {
     return {
       route: this.$route.path,
       schNoShow: false,
-      schBarShow: false
+      schBarShow: false,
+      isMemActive: false,
+      memberShow: "none"
     };
   },
   components: {
@@ -151,6 +218,20 @@ export default {
       } else {
         $(".makeup-block").removeClass("two-sort");
       }
+    },
+
+    openDrop: function() {
+      let vm = this;
+      vm.isMemActive = !vm.isMemActive;
+    },
+
+    watchMem: function() {
+      let vm = this;
+      if (vm.isMemActive) {
+        vm.memberShow = "block";
+      } else {
+        vm.memberShow = "none";
+      }
     }
   },
 
@@ -164,6 +245,9 @@ export default {
     //     $(".makeup-block").removeClass("two-sort");
     //   }
     // }
+    isMemActive: function() {
+      this.watchMem();
+    }
   },
 
   updated() {
@@ -179,7 +263,18 @@ export default {
   },
 
   mounted() {
-    this.sortChange();
+    let vm = this;
+    vm.sortChange();
+    let body = document.body;
+    console.log(body);
+    body.addEventListener(
+      "click",
+      function() {
+        vm.isMemActive = false;
+        vm.memberShow = "none";
+      },
+      false
+    );
     // console.log(this.$route);
     // console.log(this.$route.path);
     // if (this.$route.path !== "/" || this.$route.path !== "/product_intro") {

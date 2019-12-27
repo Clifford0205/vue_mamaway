@@ -3,7 +3,7 @@
     <div class="row">
       <div class="single-product col-lg-3 col-6">
         <div class="item">
-          <router-link to="/product_details" @click.capture="routerClick">
+          <router-link to="/product_details">
             <div class="img-area">
               <img
                 src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png"
@@ -11,7 +11,13 @@
                 @click.capture="showSlider"
                 class="start-img"
               />
-              <carousel :items="1" :dots="true" :nav="true" class="the-carousel">
+              <carousel
+                :items="1"
+                :dots="true"
+                :nav="true"
+                class="the-carousel"
+                @click="sliderMove"
+              >
                 <div class="slider-item">
                   <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
                 </div>
@@ -24,6 +30,8 @@
                   <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
                 </div>
               </carousel>
+
+              <!-- <button @click.capture="test">></button> -->
 
               <div class="circle">
                 <object>
@@ -630,12 +638,18 @@ export default {
     showSlider: function(e) {
       e.preventDefault();
 
-      alert("ggg");
+      // alert("ggg");
     },
-    routerClick: function() {
-      // e.stopPropagation();
-      alert("RRR");
+
+    sliderMove: function() {
+      e.preventDefault();
     }
+    // test: function(e) {
+    //   e.preventDefault();
+    //   console.log(e.target.parentNode.querySelector(".owl-next"));
+    //   let next = e.target.parentNode.querySelector(".owl-next");
+    //   next.click();
+    // }
   }
 };
 </script>
